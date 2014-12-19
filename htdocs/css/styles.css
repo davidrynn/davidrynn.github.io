@@ -38,7 +38,7 @@ body#acting{
 }
 
 /*  footer */
-.footer.home, .footer.web_development, .footer.travel_blog {
+.footer.home, .footer.travel_blog {
     position:absolute;
     bottom:0;
     width:100%;
@@ -48,7 +48,7 @@ body#acting{
     font-family: Helvetica, Arial, sans-serif;
 
 }
-.footer.acting {
+.footer.acting, .web_development {
     position:bottom;
     bottom:0;
     width:100%;
