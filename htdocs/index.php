@@ -5,12 +5,14 @@ include('inc/header.php');
  ?>
 
 
+	<div class="body">
 
-	<div class="body"><h1>Web Development & More</h1></div>
-	<h2>-Reformed lawyer</h2>
-	<h2>-Actor/Improviser</h2>
-	<h2>-etc.,etc.</h2>
+    <div>&nbsp;   </div>
+    <h2>Web Developer & More.</h2>
+  	<h5>(More = Reformed lawyer, actor/improviser, world traveller extraordinaire)</h5>
 
+
+  </div>
 
 <?php include('inc/footer.php'); ?>
 </body>
