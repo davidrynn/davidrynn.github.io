@@ -78,7 +78,7 @@ var gallery = blueimp.Gallery([
         title: 'Clips from "The Maiden Voyage of Jimmy Swash"  -  Short film',
         href: '/videos/jimmyedit.mp4',
         type: 'video/mp4',
-        poster: '/images/jimmyeditpic.jpg'
+        poster: '/img/jimmyeditpic.jpg'
     },
 
 
