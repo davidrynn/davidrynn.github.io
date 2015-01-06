@@ -4,6 +4,8 @@
     <!-- Controls for the borderless lightbox -->
     <h3 class="title"></h3>
     <a class="prev">‹</a>
+ <?php require_once('../inc/config.php'); ?>
+
     <a class="next">›</a>
     <a class="close">×</a>
     <a class="play-pause"></a>
@@ -36,9 +38,9 @@
 var gallery = blueimp.Gallery([
     {
         title: 'Law & Order, episode "Bogeyman"',
-        href: 'videos/LnO.mp4',
+        href: '/videos/LnO.mp4',
         type: 'video/mp4',
-        poster: 'img/loscreencap.jpg'
+        poster: '/img/loscreencap.jpg'
     },
         {
         title: '"The Canadian" Spoof of "The American" trailer',
@@ -58,25 +60,25 @@ var gallery = blueimp.Gallery([
         href: 'http://youtu.be/i6fTgHmZYy8',
         type: 'text/html',
         youtube: 'i6fTgHmZYy8',
-        poster: 'img/Trapped119.jpg'
+        poster: '/img/Trapped119.jpg'
     },
      {
         title: 'The Engagement',
-        href: 'videos/The Engagement.mp4',
+        href: '/videos/The Engagement.mp4',
         type: 'video/mp4',
-        poster: 'img/engagescreencap1.jpg'
+        poster: '/img/engagescreencap1.jpg'
     },     
     {
         title: 'The Night Doorman',
-        href: 'videos/NightDoorman.mp4',
+        href: '/videos/NightDoorman.mp4',
         type: 'video/mp4',
-        poster: 'img/ntdrmn603.jpg'
+        poster: '/img/ntdrmn603.jpg'
     },
    {
         title: 'Clips from "The Maiden Voyage of Jimmy Swash"  -  Short film',
-        href: 'videos/jimmyedit.mp4',
+        href: '/videos/jimmyedit.mp4',
         type: 'video/mp4',
-        poster: 'images/jimmyeditpic.jpg'
+        poster: '/images/jimmyeditpic.jpg'
     },
 
 

@@ -1,7 +1,8 @@
 <?php 
+require_once('inc/config.php');
 $pageTitle = "David Rynn - Home";
 $page = "home";
-include('inc/header.php');
+include(ROOT_PATH . 'inc/header.php');
  ?>
 
 
@@ -14,6 +15,6 @@ include('inc/header.php');
 
   </div>
 
-<?php include('inc/footer.php'); ?>
+<?php include(ROOT_PATH . 'inc/footer.php'); ?>
 </body>
 </html>

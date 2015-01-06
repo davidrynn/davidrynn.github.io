@@ -1,3 +1,4 @@
+<?php require_once('../inc/config.php'); ?>
 <div id="blueimp-gallery" class="blueimp-gallery">
     <!-- The container for the modal slides -->
     <div class="slides"></div>
@@ -32,26 +33,26 @@
     </div>
 </div>
 <div id="links">
-    <a href="img/Rynn_David_6380_sml.jpg" data-gallery>
-		<img src="img//thumbs/Rynn_David_6380_sml.jpg" alt="Primary Headshot" ></a>
+    <a href="<?php echo BASE_URL; ?>img/Rynn_David_6380_sml.jpg" data-gallery>
+		<img src="<?php echo BASE_URL; ?>img//thumbs/Rynn_David_6380_sml.jpg" alt="Primary Headshot" ></a>
 
-    <a href="img/Rynn_David_FP_109.sml.jpg"  data-gallery>
-        <img src="img/thumbs/Rynn_David_FP_109.sml.jpg" alt = "Suit 1">
+    <a href="<?php echo BASE_URL; ?>img/Rynn_David_FP_109.sml.jpg"  data-gallery>
+        <img src="<?php echo BASE_URL; ?>img/thumbs/Rynn_David_FP_109.sml.jpg" alt = "Suit 1">
     </a>
-    <a href="img/Rynn_David_FP_66.sml.gry.jpg" data-gallery>
-        <img src="img/thumbs/Rynn_David_FP_66.sml.gry.jpg" alt="Secondary Headshot"></a>
+    <a href="<?php echo BASE_URL; ?>img/Rynn_David_FP_66.sml.gry.jpg" data-gallery>
+        <img src="<?php echo BASE_URL; ?>img/thumbs/Rynn_David_FP_66.sml.gry.jpg" alt="Secondary Headshot"></a>
 
-     <a href="img/Digital_B_079.jpg" data-gallery>
-        <img src="img/thumbs/Digital_B_079.jpg" alt="Outside 1"></a>
+     <a href="<?php echo BASE_URL; ?>img/Digital_B_079.jpg" data-gallery>
+        <img src="<?php echo BASE_URL; ?>img/thumbs/Digital_B_079.jpg" alt="Outside 1"></a>
 
-    <a href="img/Digital_B_101.jpg"data-gallery>
-        <img src="img/thumbs/Digital_B_101.jpg" alt="Suit 2"></a>
+    <a href="<?php echo BASE_URL; ?>img/Digital_B_101.jpg"data-gallery>
+        <img src="<?php echo BASE_URL; ?>img/thumbs/Digital_B_101.jpg" alt="Suit 2"></a>
 
-    <a href="img/Digital_B_146.jpg" data-gallery>
-        <img src="img/thumbs/Digital_B_146.jpg" alt="Commercial 2"></a>
+    <a href="<?php echo BASE_URL; ?>img/Digital_B_146.jpg" data-gallery>
+        <img src="<?php echo BASE_URL; ?>img/thumbs/Digital_B_146.jpg" alt="Commercial 2"></a>
 
-    <a href="img/DR_HeadShot.4.17.13.edit1.sml.jpg" data-gallery>
-        <img src="img/thumbs/DR_HeadShot.4.17.13.edit1.sml.jpg" alt="Alternate Headshot"></a>
+    <a href="<?php echo BASE_URL; ?>img/DR_HeadShot.4.17.13.edit1.sml.jpg" data-gallery>
+        <img src="<?php echo BASE_URL; ?>img/thumbs/DR_HeadShot.4.17.13.edit1.sml.jpg" alt="Alternate Headshot"></a>
 
 </div>
 <div class="row" height=auto><p></p></div>

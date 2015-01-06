@@ -81,7 +81,7 @@ function loadImage(name) {
   images[name].onload = function() { 
 	  resourceLoaded();
   }
-  images[name].src = "img/drac/" + name + ".png";
+  images[name].src = "/img/drac/" + name + ".png";
 }
 
 function resourceLoaded() {
