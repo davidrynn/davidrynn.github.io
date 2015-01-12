@@ -1,6 +1,7 @@
 <?php 
+require_once('../inc/config.php');
 
-if ($_SERVER["REQUEST_METHOD"] == "POST")) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$name = trim($_POST["name"]);
 	$email = trim($_POST["email"]);
 	$message = trim($_POST["message"]);
@@ -10,22 +11,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")) {
 		$error_message = "You must specify value for name, email, and message.";
 	}
 
-	foreach( $_POST as $value ){
-		if( stripos($value, 'Content-Type: ') !== FALSE){
-			$error_message =  "There was a problem with the information you entered.";
-		
+	if(!isset($error_message))  {
+		foreach( $_POST as $value ){
+			if( stripos($value, 'Content-Type: ') !== FALSE){
+				$error_message =  "There was a problem with the information you entered.";
+			
+			}
 		}
 	}
 
-	if ($_POST["address"] != "") {
+	if (!isset($error_message) && $_POST["address"] != "") {
 		$error_message =  "Your form submission has an error.";
 	
 	}
 
-	require_once("inc/phpmailer/class.phpmailer.php");
+
+	//phpmailer 3rd party mailer section
+	require_once(ROOT_PATH . "inc/phpmailer/class.phpmailer.php");
 	$mail = new PHPMailer();
 
-	if (!$mail->ValidateAddress($email)){
+	if (!isset($error_message) && !$mail->ValidateAddress($email)){
 		$error_message =  "You must specify a valid email address.";
 	
 	}
@@ -39,45 +44,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")) {
 
 		//deleted AddReply to
 
-		//per video setFrom
+		//setFrom
 		$mail->setFrom($email, $name);
-		//no longer need to specify $address, just put value in...
-		$mail->addAddress("davidrynn@hotmail.com", "David Rynn");
-		//Set the subject line per video
+		//set to
+		$mail->addAddress("davidrynn@gmail.com", "David Rynn");
+		//Set the subject line
 		$mail->Subject = 'David Rynn Contact Form Submission |' . $name;
 
 		//Read an HTML message body from an external file, convert referenced images to embedded,
 		//convert HTML into a basic plain-text alternative body
-		// ** ignore above comment and follow video, replacing file_get_comtents...
 		$mail->msgHTML($email_body);
 
-		//deleted $mail->AltBody line per video
-		
-		// deleted addAttachment per video
-
 		//send the message, check for errors
-		}	
+			
 		if ($mail->send()) {
-			header("Location: contact.php?status=thanks");
+			header("Location: ". BASE_URL . "contact/?status=thanks");
 			exit;
 
 		} else {
 		    $error_message =  "There was a problem sending the email: " . $mail->ErrorInfo;
 
-		} 
-
-	
-	if (isset($error_message)) {
-		
+		}
 	}
 }
 
-
+?>
+<?php
 $page = "contact";
-$pageTitle = "Contact"
- include('inc/header.php');
+$pageTitle = "Contact";
+ include(ROOT_PATH . 'inc/header.php');
   ?>
-<div class ="section page">
+<div class ="contact">
 	<div class = "wrapper">
 		
 
@@ -85,12 +82,21 @@ $pageTitle = "Contact"
 
 		<?php if (isset($_GET["status"]) AND $_GET["status"] == "thanks"){ ?>
 
-			<p>Thanks for the email! I&rsquo;ll be in touch shortly.</p>
+			<p>Thanks for the email! I&rsquo;ll get back to you shortly.</p>
 
 		<?php } else { ?>
-			<p>I&rsquo;d love to hear from you!  Complete the form to send me an email.</p>
+	 <?php  
+	 if (!isset($error_message)){
+	 	echo '<p>Feel free to contact me.  Complete the form to send me an email.  Thanks!</p>';
 
-			<form method="post" action="contact.php">
+	 } else {
+	 	echo '<p class="message">'. $error_message . '</p>';
+	 }
+
+
+	 ?>
+
+			<form method="post" action="<?php echo BASE_URL; ?>contact/">
 				<table>
 					<tr>
 						<th>
@@ -133,6 +139,6 @@ $pageTitle = "Contact"
 
 	</div>
  </div>
- <?php include('inc/footer.php') ?>
+ <?php include(ROOT_PATH . 'inc/footer.php') ?>
  </body>
 </html>

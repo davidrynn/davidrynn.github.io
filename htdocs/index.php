@@ -9,6 +9,7 @@ include(ROOT_PATH . 'inc/header.php');
 	<div class="body">
 
     <div>&nbsp;   </div>
+    <div>&nbsp;   </div>
     <h2>Web Developer & More.</h2>
   	<h5>(More = Reformed lawyer, actor/improviser, world traveller extraordinaire)</h5>
 

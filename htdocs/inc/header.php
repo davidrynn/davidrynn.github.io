@@ -45,8 +45,7 @@
             <li <?php if ($page=="web_development") {echo "class='active'";} ?>><a href="<?php echo BASE_URL; ?>web_development/">Web Development</a></li>
             <li <?php if ($page=="acting") {echo "class='active'";} ?>><a href="<?php echo BASE_URL; ?>acting/">Acting</a></li>
             <li <?php if ($page=="travel_blog") {echo "class='active'";} ?>><a href="<?php echo BASE_URL; ?>travel_blog/">Travel Blog</a></li>
-<!--             <li <?php if ($page=="contact") {echo "class='active'";} ?>><a href="<?php echo BASE_URL; ?>contact/">Contact</a></li>
- -->          </ul>
+            <li <?php if ($page=="contact") {echo "class='active'";} ?>><a href="<?php echo BASE_URL; ?>contact/">Contact</a></li>        </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
 
