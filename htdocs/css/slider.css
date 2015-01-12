@@ -12,3 +12,28 @@
 .container--open .intro {
 	transform: translate3d(0, -100%, 0) translate3d(0, 250px, 0);
 }
+
+.intro_image {
+	position: absolute;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 120%;
+	width: auto;
+	height: auto;
+	opacity: 0.8;
+	transition: transform 0.6s, opacity 0.6s;
+	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.container--open .intro_image {
+	opacity: 0;
+	transform: translate3d(0, 20%, 0);
+}
+
+.intro_content {
+	position: absolute;
+	bottom: 0;
+	padding: 1.8em;
+	width: 100%;
+	font-size: 1.15em;
+}

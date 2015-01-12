@@ -501,19 +501,21 @@ h1, h2, h3, h4, h5, h6, p, div {
 
 div.body h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
-    color: #2F4B62;
+    color: rgba(0, 0, 0, 0);
     text-align: center;
     font-weight: 900;
     vertical-align: middle;
-    text-shadow: none;
-
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: rgba(0, 0, 0, .5);
+   /* text-shadow: 1px 1px #000;
+*/
 }
 
 body#home, #web_development, #travel_blog, #about, #contact{
 
-    background: url(images/davidIndex.jpg) no-repeat right fixed;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.jpg', sizingMethod='scale')";
+    background: url(images/davidIndex.gif) no-repeat right fixed;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.gif', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.gif', sizingMethod='scale')";
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
