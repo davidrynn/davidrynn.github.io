@@ -42,11 +42,17 @@ include(ROOT_PATH . 'inc/header.php');
 			</div><!-- /subtitle -->
 		</div><!-- /intro__content -->
 	</div><!-- /intro -->
-<nav class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container">
-    ...
-  </div>
-</nav>
+	<section class="items-wrap">
+		    <a href="#" class="item">
+					<img class="item__image" src="../img/wordatic.gif" alt="item01"/>
+					<h2 class="item__title">Wordatic</h2>
+			</a>
+			<a href="#" class="item">
+					<img class="item__image" src="../img/semRater.gif" alt="item02"/>
+					<h2 class="item__title">Seminar Rater</h2>
+			</a>
+	</section><!-- /items wrap -->
+
 </div><!-- /contain -->
 
 <script src="js/classie.js"></script>
