@@ -7,6 +7,7 @@
 
 	<title><?php echo $pageTitle ?></title>
 
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>css/normalize.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/bootstrap-image-gallery.min.css">
