@@ -1,0 +1,12 @@
+.menu{
+	      height: 100%;
+}
+ul {
+	position: fixed;
+	bottom:0;
+}
+nav li {
+	text-decoration: none;
+      display: inline-block;
+
+}

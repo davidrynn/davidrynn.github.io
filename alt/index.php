@@ -22,12 +22,6 @@ include(ROOT_PATH . 'inc/header.php');
 				<button class="trigger hvr-pulse">
 		
 					<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRation="none">
-<!-- 						<g class="icon icon--grid">
-							<rect x="32.5" y="5.5" width="22" height="22"/>
-							<rect x="4.5" y="5.5" width="22" height="22"/>
-							<rect x="32.5" y="33.5" width="22" height="22"/>
-							<rect x="4.5" y="33.5" width="22" height="22"/>
-						</g> -->
 						<g class="icon icon--grid">
 							<circle class="outer" cx="29" cy="30" r="28" />
 							<circle cx="29" cy="30" r="20" />
@@ -43,14 +37,16 @@ include(ROOT_PATH . 'inc/header.php');
 		</div><!-- /intro__content -->
 	</div><!-- /intro -->
 	<section class="items-wrap">
-		    <a href="#" class="item">
-					<img class="item__image" src="../img/wordatic.gif" alt="item01"/>
+		<div class="spacer"> test</div>
+
+<!-- 		    <a href="#" class="item">
+					<img class="item__image" src="../img/links.png" alt="item01"/>
 					<h2 class="item__title">Wordatic</h2>
 			</a>
 			<a href="#" class="item">
 					<img class="item__image" src="../img/semRater.gif" alt="item02"/>
 					<h2 class="item__title">Seminar Rater</h2>
-			</a>
+			</a> -->
 	</section><!-- /items wrap -->
 
 </div><!-- /contain -->
