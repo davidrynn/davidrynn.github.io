@@ -99,8 +99,6 @@ a {
 .trigger {
     float: right;
     position: relative;
-    -webkit-flex: none;
-    flex: none;
     overflow: hidden;
     margin: 0 0 0 20px;
     padding: 0;
@@ -170,7 +168,7 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+.hvr-pulse:hover {
   -webkit-animation-name: hvr-pulse;
   animation-name: hvr-pulse;
   -webkit-animation-duration: 1s;
@@ -231,28 +229,48 @@ a {
 
 
 .spacer {
-    padding-top: 65%;
+    position: relative;
+    min-height: 60%;
 }
 
-nav ul {
+/*centers menu items*/
+.menu{
 
+          text-align: center;
+}
+
+
+nav ul {
     width: 100%;
-    padding-top: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 15%;
     list-style: none;
+    padding: 0;
+    position: absolute;
+    bottom: 20%;
+
 
 }
 
 nav li {
-
       display: inline-block;
-      margin: 2% 2%;
+  }
+
+
+/*Style for menu links*/
+nav li a {
+    margin: 2px 5px;
+    background: url(../../img/links.png) no-repeat center;
+    display:block;
+    min-width:140px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
 }
 
-nav li:hover{
-    text-decoration: underline;
+/*Hover state for links*/
+nav li:hover a {
+    background: url(../../img/links.png) no-repeat center;
+    opacity: 0.3;
+
 }
 
 .item {
@@ -260,8 +278,6 @@ nav li:hover{
     margin: 20px;
     max-height: 100px;
     max-width: 300px;
-    -webkit-flex: 1 0 25%;
-    flex: 1 0 25%;
     overflow: hidden;
     height: 22vw;
     outline: none;
@@ -310,17 +326,13 @@ nav li:hover{
 
 @media screen and (max-width: 1440px) {
     .item {
-        -webkit-flex: 1 0 33.333%;
-        flex: 1 0 33.333%;
-        height: 30vw;
+         height: 30vw;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .item {
-        -webkit-flex: 1 0 50%;
-        flex: 1 0 50%;
-        height: 45vw;
+         height: 45vw;
     }
     .item,
     .intro__content {
@@ -329,18 +341,41 @@ nav li:hover{
 }
 
 @media screen and (max-width: 590px) {
-    .item {
-        -webkit-flex: 1 0 100%;
-        flex: 1 0 100%;
-        height: 90vw;
+
+    nav ul {
+        bottom: 15%;
     }
 
+    /*Create vertical spacing*/
+    nav li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    nav ul li, li a {
+        width: 100%;
+    }
+    .spacer {
+        min-height: 30%
+    }
+
+    /*change font size for title*/
     .intro__title {
         font-size: 2em;
     }
 
-    nav li {
-        display: block;
+    .contain--open .intro {
+        -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 30%, 0);
+        transform: translate3d(0, -100%, 0) translate3d(0, 30%, 0);
+    }
+
+
+}
+
+@media screen and (max-height: 150px) {
+
+    .contain--open .intro {
+        -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 27%, 0);
+        transform: translate3d(0, -100%, 0) translate3d(0, 27%, 0);
     }
 }
 
