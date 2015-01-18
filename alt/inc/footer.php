@@ -1,16 +1,30 @@
-
+				<button class="trigger hvr-pulse">
 		
+					<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRation="none">
+						<g class="icon icon--grid">
+							<circle class="outer" cx="29" cy="30" r="28" />
+							<circle cx="29" cy="30" r="20" />
+						</g> 
+						<g class="icon icon--cross">
+							<line x1="4.5" y1="55.5" x2="54.953" y2="5.046"/>
+							<line x1="54.953" y1="55.5" x2="4.5" y2="5.047"/>
+						</g>
+					</svg>
+					<span>View content</span>
+				</button><!-- /trigger -->
+		</div><!-- /intro__content -->
+	</div><!-- /intro -->
+
 		<nav class="menu">
 			<ul>
-				<li><a href="../web_development/index.php">Web Development</a></li>
+				<li><a href="<?php echo BASE_URL; ?>web_development">Web Development</a></li>
 				<li><a href="#">About</a></li>
-				<li><a href="../contact/index.php">Acting</a></li>
+				<li><a href="<?php echo BASE_URL; ?>acting">Acting</a></li>
 				<li><a href="#">Blogs</a></li>
 			</ul>
 		</nav>
-		/div><!-- /contain -->
-
-<script src="js/classie.js"></script>
+	
+<script src="<?php echo BASE_URL ?>js/classie.js"></script>
 <script>
     (function() {
  
