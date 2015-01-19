@@ -12,17 +12,28 @@
 					</svg>
 					<span>View content</span>
 				</button><!-- /trigger -->
-		</div><!-- /intro__content -->
+	
 	</div><!-- /intro -->
+
 
 		<nav class="menu">
 			<ul>
-				<li><a href="<?php echo BASE_URL; ?>web_development">Web Development</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="<?php echo BASE_URL; ?>acting">Acting</a></li>
-				<li><a href="#">Blogs</a></li>
+				<?php 
+
+					$links = array("home" => "Home", "web_development" => "Web Development", "acting" => "Acting", "blogs" => "Blogs", "about"=>"About", "contact" => "Contact");
+					foreach ($links as $key => $link){
+					if ($link == "Home" && $pageTitle != "Home") { ?>
+
+				<li><a href="<?php echo BASE_URL; ?>">Home</a></li>
+						
+					<?php		} elseif ($link != $pageTitle) {
+						echo '<li><a href="' . BASE_URL . $key . '">' . $link . '</a></li>';
+					} }?> 
+		
+
 			</ul>
 		</nav>
+	</div><!-- /contain -->
 	
 <script src="<?php echo BASE_URL ?>js/classie.js"></script>
 <script>
@@ -35,24 +46,24 @@
             if( classie.has( container, 'contain--open' ) ) {
                 classie.remove( container, 'contain--open' );
                 classie.remove( trigger, 'trigger--active' );
-                window.addEventListener( 'scroll', noscroll );
+                // window.addEventListener( 'scroll', noscroll );
             }
             else {
                 classie.add( container, 'contain--open' );
                 classie.add( trigger, 'trigger--active' );
-                window.removeEventListener( 'scroll', noscroll );
+                // window.removeEventListener( 'scroll', noscroll );
             }
         }
  
-        function noscroll() {
-            window.scrollTo( 0, 0 );
-        }
+        // function noscroll() {
+        //     window.scrollTo( 0, 0 );
+        // }
  
-        // reset scrolling position
-        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        // // reset scrolling position
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
  
-        // disable scrolling
-        window.addEventListener( 'scroll', noscroll );
+        // // disable scrolling
+        // window.addEventListener( 'scroll', noscroll );
  
         trigger.addEventListener( 'click', toggleContent );
 
@@ -71,10 +82,8 @@
 				<li><a href="https://www.linkedin.com/pub/david-rynn/2/54b/6b9" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
 				<li><a href="https://www.github.com/davidrynn" target="_blank"><i class="fa fa-github-square"></i></a></li>
 			</ul>
-			<p>&copy;<?php echo date('Y'); ?> David Rynn</p>
+			<p><a href="<?php echo BASE_URL; ?>alt/" >&copy;<?php echo date('Y'); ?> David Rynn</a></p>
 
 		</div>
 
 	</div>
-
-	

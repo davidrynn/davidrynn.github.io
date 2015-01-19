@@ -26,13 +26,14 @@ a {
     height: 100%;
     /* background: #2a2e39;
    background: url(images/davidIndex.gif) no-repeat right bottom fixed;
- */   
+ 
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.jpg', sizingMethod='scale')";
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+     */  
     -webkit-transition: -webkit-transform 0.6s;
     transition: transform 0.6s;
     -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
@@ -40,7 +41,7 @@ a {
 
 }
 
-.intro::after {
+.intro.home::after {
     content: "";
     background: url(images/davidIndex.gif) no-repeat right bottom fixed;
     background-size: cover;
@@ -63,15 +64,9 @@ a {
 }
 
 /* Intro content */
-.intro__content {
-    position: absolute;
-    bottom: 0;
-    padding: 1.8em;
-    width: 100%;
-    font-size: 1.15em;
-}
 
-.intro__title {
+
+.title.home {
     position: fixed;
     bottom: 40px;
     left: 20px;
@@ -84,10 +79,11 @@ a {
 
 /* Trigger button with SVG */
 .trigger {
-    float: right;
-    position: relative;
+    position: fixed;
+    bottom: 20px;
+    right: 0pc;
+    margin: 30px 40px;
     overflow: hidden;
-    margin: 0 0 0 20px;
     padding: 0;
     width: 40px;
     height: 40px;

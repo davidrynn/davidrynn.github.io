@@ -1,5 +1,5 @@
 <?php 
-$pageTitle = "David Rynn - Acting";
+$pageTitle = "Acting";
 $page = "acting";
 require_once('../inc/config.php');
 include(ROOT_PATH . 'inc/header.php');

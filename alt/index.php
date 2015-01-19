@@ -1,18 +1,15 @@
 <?php 
 require_once('inc/config.php');
-$pageTitle = "David Rynn - Home";
+$pageTitle = "Home";
 $page = "home";
 include(ROOT_PATH . 'inc/header.php');
  ?>
 
  <div id="contain" class="contain">
 
- 	<div class="intro">
+ 	<div class="<?php echo $page ?> intro">
  		 	<h1>David Rynn</h1>
-		<div class="intro__content">    
-			<h2 class="intro__title">Web Developer & More...</h2>
-
-
+ 			<h2 class="<?php echo $page ?> title">Web Developer & More...</h2>
 
 
 
