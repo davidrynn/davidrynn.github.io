@@ -8,9 +8,49 @@ include(ROOT_PATH . 'inc/header.php');
 
 <div id="contain" class="contain">
 	
-<div class="intro">
-	<h2 class="title">Web Development</h2>
+<div class="<?php echo $page ?> intro">
+	<h2 class="title"><u>Web Development</u></h2>
 	<div class="container">
+		<div class="bs-example" data-example-id="simple-table">
+    <table class="table table-condensed">
+      <caption><h3><i class="fa fa-pencil fa-2x"></i>Skills</h3></caption>
+      <thead>
+        <tr>
+          <th>Languages</th>
+          <th>Frameworks/Libraries</th>
+          <th>Version Control/Deployment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Javascript</td>
+          <td>jQuery</td>
+          <td>Git</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>Ruby on Rails</td>
+          <td>AWS</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Wordpress</td>
+          <td>Heroku</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td></td>
+          <td>Emacs/Vim</td>
+        </tr>
+        <tr>
+          <td>PHP</td>
+          <td></td>
+          <td></td>
+        </tr>
+  
+      </tbody>
+    </table>
+  </div><!-- /example -->
 
 		<div class="row webDev">
 			<div class="col-md-6">
@@ -33,12 +73,7 @@ include(ROOT_PATH . 'inc/header.php');
 	    		<p></p>
 	    		
 	    	</div>
-		    <div class="col-md-6 pull-right">
-		    	<script type="text/javascript" src="<?php echo BASE_URL; ?>js/dracula.js"></script>
-		    	<script type="text/javascript">
-		    		 prepareCanvas(document.getElementById("canvasDiv"), 400, 300);
-		    	</script>
-			</div>	
+
 	    </div>
 	</div><!-- /container -->
 
