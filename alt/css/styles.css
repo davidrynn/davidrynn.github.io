@@ -21,7 +21,8 @@ a {
     border: none;
     position: fixed;
     z-index: 10;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     width: 100%;
     height: 100%;
 
@@ -102,7 +103,7 @@ a {
     margin: 30px 40px;
     overflow: hidden;
     padding: 0;
-    width: 40px;
+    width: 42px;
     height: 40px;
     outline: none;
     border: none;
@@ -240,6 +241,9 @@ a {
 
 
 nav ul {
+        overflow-x: hidden;
+    overflow-y: scroll;
+
     width: 100%;
     list-style: none;
     padding: 0;
@@ -250,12 +254,14 @@ nav ul {
 }
 
 nav li {
+
       display: inline-block;
   }
 
 
 /*Style for menu links*/
 nav li a {
+
     margin: 2px 5px;
     background: url(../../img/links.png) no-repeat center;
     display:block;
@@ -277,7 +283,7 @@ nav li:hover a {
     margin: 20px;
     max-height: 100px;
     max-width: 300px;
-    overflow: hidden;
+    overflow: scroll;
     height: 22vw;
     outline: none;
     border: 5px solid #2a2e39;
