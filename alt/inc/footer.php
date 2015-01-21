@@ -16,6 +16,7 @@
 	</div><!-- /intro -->
 
 
+<div class="menu-wrap">
 		<nav class="menu">
 			<ul>
 				<?php 
@@ -35,41 +36,8 @@
 
 		</nav>
 
-	</div><!-- /contain -->
 
 
-	
-<script src="<?php echo BASE_URL ?>js/classie.js"></script>
-<script>
-    (function() {
- 
-        var container = document.getElementById( 'contain' ),
-        trigger = container.querySelector( 'button.trigger' );
- 
-        function toggleContent() {
-            if( classie.has( container, 'contain--open' ) ) {
-                classie.remove( container, 'contain--open' );
-                classie.remove( trigger, 'trigger--active' );
-
-            }
-            else {
-                classie.add( container, 'contain--open' );
-                classie.add( trigger, 'trigger--active' );
-
-            }
-        }
- 
-
- 
-        trigger.addEventListener( 'click', toggleContent );
-
-
-				// For Demo purposes only (prevent jump on click)
-				[].slice.call( document.querySelectorAll('.items-wrap a') ).forEach( function(el) { el.onclick = function() { return false; } } );
-
- 
-    })();
-</script>
 	<div class="footer <?php echo $page ?>">
 		<div class="wrapper">
 			<ul>
@@ -83,3 +51,42 @@
 		</div>
 
 	</div>
+</div>
+	</div><!-- /contain -->
+<script src="<?php echo BASE_URL ?>js/classie.js"></script>
+<script>
+    (function() {
+ 
+        var container = document.getElementById( 'contain' ),
+        trigger = container.querySelector( 'button.trigger' );
+ 
+        function toggleContent() {
+            if( classie.has( container, 'contain--open' ) ) {
+                classie.remove( container, 'contain--open' );
+                classie.remove( trigger, 'trigger--active' );
+                window.addEventListener( 'scroll', noscroll );
+            }
+            else {
+                classie.add( container, 'contain--open' );
+                classie.add( trigger, 'trigger--active' );
+                window.removeEventListener( 'scroll', noscroll );
+            }
+        }
+ 
+        function noscroll() {
+            window.scrollTo( 0, 0 );
+        }
+ 
+        // reset scrolling position
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+ 
+        // disable scrolling
+        window.addEventListener( 'scroll', noscroll );
+ 
+        trigger.addEventListener( 'click', toggleContent );
+
+
+
+ 
+    })();
+</script>
