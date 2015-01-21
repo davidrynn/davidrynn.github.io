@@ -16,10 +16,10 @@
 
   <link href='http://fonts.googleapis.com/css?family=IM+Fell+English+SC|IM+Fell+DW+Pica+SC|IM+Fell+English|Special+Elite' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/styles.css">
-  
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
   <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
   <script src="<?php echo BASE_URL; ?>js/bootstrap-image-gallery.min.js"></script>
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <link rel="icon" href="favicon.ico">
 
