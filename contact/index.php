@@ -74,6 +74,9 @@ $page = "contact";
 $pageTitle = "Contact";
  include(ROOT_PATH . 'inc/header.php');
   ?>
+<div id="contain" class="contain">
+	
+<div class="<?php echo $page ?> intro">
 <div class ="contact">
 	<div class = "wrapper">
 		

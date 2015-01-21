@@ -27,6 +27,3 @@
 
 </head>
 <body id="<?php echo $page ?>">
-	
-
-	</header>

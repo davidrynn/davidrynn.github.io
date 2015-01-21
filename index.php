@@ -1,21 +1,19 @@
 <?php 
 require_once('inc/config.php');
-$pageTitle = "David Rynn - Home";
+$pageTitle = "Home";
 $page = "home";
 include(ROOT_PATH . 'inc/header.php');
  ?>
 
+ <div id="contain" class="contain">
 
-	<div class="body">
-
-    <div>&nbsp;   </div>
-    <div>&nbsp;   </div>
-    <h2>Web Developer & More.</h2>
-  	<h5>(More = Reformed lawyer, actor/improviser, world traveller extraordinaire)</h5>
+ 	<div class="<?php echo $page ?> intro">
+ 		 	<h1>David Rynn</h1>
+ 			<h2 class="<?php echo $page ?> title">Web Developer & More...</h2>
 
 
-  </div>
 
-<?php include(ROOT_PATH . 'inc/footer.php'); ?>
+
+<?php  include(ROOT_PATH . 'inc/footer.php'); ?>
 </body>
 </html>
