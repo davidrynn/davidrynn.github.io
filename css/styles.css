@@ -478,13 +478,22 @@ border-color: #C0C0C0;
 /* Web Dev section*/
  .webDev img {
     border:solid;
+    height: 200px; 
+    width: 280px; 
+    overflow: hidden;
 
 
+ }
+
+.webDev h3 {
+    text-decoration: underline;
+    padding: 10px 10px;
  }
  div.webDev {
     list-style: none;
     margin: 3em;
     padding: 1em;
+
 }
 /*end web dev*/
 

@@ -53,6 +53,7 @@ include(ROOT_PATH . 'inc/header.php');
   </div><!-- /example -->
 
     <div class="row webDev">
+      <h3><i class="fa fa-cogs fa-2x"></i>Projects</h3>
       <div class="col-md-6">
         <a href="http://www.scottanddave.net" target="_blank"><img src="<?php echo BASE_URL; ?>img/scottanddave.png" class="img-responsive" alt="Wordatic game"></a>
       </div>
