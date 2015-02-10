@@ -52,6 +52,14 @@ include(ROOT_PATH . 'inc/header.php');
     </table>
   </div><!-- /example -->
 
+    <div class="row webDev">
+      <div class="col-md-6">
+        <a href="http://www.scottanddave.net" target="_blank"><img src="<?php echo BASE_URL; ?>img/scottanddave.png" class="img-responsive" alt="Wordatic game"></a>
+      </div>
+      <div class="col-md-6">Website for ScottandDave.net, a comedy webseries
+      </div>
+    </div>
+
 		<div class="row webDev">
 			<div class="col-md-6">
 				<a href="http://www.wordatic.com" target="_blank"><img src="<?php echo BASE_URL; ?>img/wordatic.gif" class="img-responsive" alt="Wordatic game"></a>
