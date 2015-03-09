@@ -9,7 +9,7 @@ include(ROOT_PATH . 'inc/header.php');
 <div id="contain" class="contain">
 	
 <div class="<?php echo $page ?> intro">
-	<h2 class="title"><u>Web Development</u></h2>
+	<h2>Web Development</h2>
 	<div class="container">
 		<div class="bs-example" data-example-id="simple-table">
     <table class="table table-condensed">

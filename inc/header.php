@@ -26,4 +26,4 @@
 
 
 </head>
-<body id="<?php echo $page ?>">
+<body>

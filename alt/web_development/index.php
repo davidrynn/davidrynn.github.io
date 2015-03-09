@@ -9,7 +9,7 @@ include(ROOT_PATH . 'inc/header.php');
 <div id="contain" class="contain">
 	
 <div class="<?php echo $page ?> intro">
-	<h2 class="title"><u>Web Development</u></h2>
+	<h2>Web Development</h2>
 	<div class="container">
 		<div class="bs-example" data-example-id="simple-table">
     <table class="table table-condensed">
@@ -51,6 +51,15 @@ include(ROOT_PATH . 'inc/header.php');
       </tbody>
     </table>
   </div><!-- /example -->
+
+    <div class="row webDev">
+      <h3><i class="fa fa-cogs fa-2x"></i>Projects</h3>
+      <div class="col-md-6">
+        <a href="http://www.scottanddave.net" target="_blank"><img src="<?php echo BASE_URL; ?>img/scottanddave.png" class="img-responsive" alt="Wordatic game"></a>
+      </div>
+      <div class="col-md-6">Website for ScottandDave.net, a comedy webseries
+      </div>
+    </div>
 
 		<div class="row webDev">
 			<div class="col-md-6">

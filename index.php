@@ -9,7 +9,7 @@ include(ROOT_PATH . 'inc/header.php');
 
  	<div class="<?php echo $page ?> intro">
  		 	<h1>David Rynn</h1>
- 			<h2 class="<?php echo $page ?> title">Web Developer & More...</h2>
+ 			<h2>Web Developer & More...</h2>
 
 
 
