@@ -14,9 +14,11 @@
         4.2c Home
         4.2d Web_Development
 5.0 Footer
+    5.1 Footer General
     5.2 Footer Button
     5.3 Footer Nav
-6.0 Animations
+    5.4 Footer footer
+
 7.0 Media Queries
 
 */
@@ -120,10 +122,10 @@ h2 {
             /*4.2a Contact General*/
 .contact h1 {
     font-size: 24px; 
+    font-weight: normal;
+    line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
-    line-height: 1.6;
-    font-weight: normal;    
 }
 
 .contact.intro, .web_development.intro {
@@ -131,28 +133,28 @@ h2 {
 }
 
 
-.contact p {width: 375px; margin-left: auto; margin-right: auto; }
+.contact p {margin-left: auto; margin-right: auto; width: 375px; }
             /*4.2b Contact Form */
-form {width: 375px; margin: 34px auto;}
+form {margin: 34px auto; width: 375px; }
 form input[type="submit"] {
-    width: 375px;
-    text-align: center;
-    border: 1px solid #8e8e46;
     background: rgb(104, 104, 126);
-    color: #FFF;
-    -webkit-border-radius: 2px;
+    border: 1px solid #8e8e46;
     border-radius: 2px;    
+    -webkit-border-radius: 2px;
+    color: #FFF;
     font-size: 14px;
-    text-transform: uppercase;
     padding: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 375px;
 }
 
-form table {width: 375px; margin-bottom: 16px;}
+form table { margin-bottom: 16px; width: 375px;}
 form th {
-    width: 85px;
     border-right: 1px solid #CCC;
-    vertical-align: middle;
     padding: 8px;
+    vertical-align: middle;
+    width: 85px;
 }
 form td {
     padding: 15px 15px;
@@ -174,10 +176,10 @@ form tr {
     /* 4.3 Home */
 
 .home h2 {
-
-    position: fixed;
     bottom: 40px;
+    position: fixed;
 }
+
 .home.intro::after {
     background: url(images/davidIndex.gif) no-repeat right bottom fixed;
     background-size: cover;
@@ -209,13 +211,13 @@ form tr {
 .webDev img {
     border:solid;
     height: 200px; 
-    width: 280px; 
     overflow: hidden;
+    width: 280px; 
  }
 
 .webDev h3 {
-    text-decoration: underline;
     padding: 10px 10px;
+    text-decoration: underline;
  }
 
 .row.title {
@@ -233,6 +235,15 @@ form tr {
 
 
 
+
+/*************************/
+/******5.0 Footer***********/
+/****************/
+
+    /*******************/
+    /* 5.1 Footer General*/
+
+/*allow scrolling on acting and web_development pages*/
 .contain--open .web_development, .contain--open .acting {
     overflow: hidden;
 }
@@ -243,21 +254,20 @@ form tr {
 }
 
 
-
-/* Trigger button with SVG */
+    /*******************/
+    /* 5.2 Footer Trigger button with SVG */
 .trigger {
-    position: fixed;
+    background: none;
+    border: none;
     bottom: 20px;
-    right: 0pc;
+    height: 40px;
     margin: 30px 40px;
+    outline: none;
     overflow: hidden;
     padding: 0;
+    position: fixed;
+    right: 0pc;
     width: 42px;
-    height: 40px;
-    outline: none;
-    border: none;
-    background: none;
-
 }
 
 /* Hide the text */
@@ -271,8 +281,8 @@ form tr {
 
 .icon line,
 .icon circle {
-    stroke: #494132;
     fill: rgba(229, 206, 117,.5);
+    stroke: #494132;
     stroke-width: 4px;
 }
 
@@ -310,11 +320,11 @@ form tr {
 }
 
 .hvr-pulse {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
@@ -345,142 +355,97 @@ form tr {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
 }
+    /*End 5.2 trigger button*/
+    /*******************/
 
-/* Menu content */
-.items-wrap {
 
-    width: 100%;
-    height: 100%;
 
-}
-
-.items-wrap::after {
-
-    width: 100%;
-    height: 100%;
-    background: #2a2e39;
-    content: '';
-    opacity: 1;
-    -webkit-transition: opacity 0.6s;
-    transition: opacity 0.6s;
-    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-    pointer-events: none;
-}
-
-.contain--open .items-wrap::after {
-    opacity: 0;
-}
-
+    /*******************/
+    /* 5.3 Nav Menu  */
 
 /*centers menu items*/
 .menu{
-
-          text-align: center;
+    text-align: center;
 }
 
 
 nav ul {
-
-
-    width: 100%;
+    bottom: 10%;
     list-style: none;
     padding: 0;
     position: absolute;
-    bottom: 10%;
-
+    width: 100%;
 
 }
 
 nav li {
-
       display: inline-block;
   }
 
 
 /*Style for menu links*/
 nav li a {
-
-    margin: 2px 5px;
     background: url(../img/links.gif) no-repeat center;
     display:block;
-    min-width:140px;
     height: 50px;
     line-height: 50px;
-
+    margin: 2px 5px;
+    min-width:140px;
 }
 
 /*Hover state for links*/
 nav li:hover a {
     background: url(../img/links.gif) no-repeat center;
+    color: inherit;
     opacity: 0.3;
     text-decoration: none;
-    color: inherit;
 
 }
 
-.item {
-    position: relative;
-    margin: 20px;
-    max-height: 100px;
-    max-width: 300px;
-    overflow: scroll;
-    height: 22vw;
-    outline: none;
-    border: 5px solid #2a2e39;
-    border-radius: 25px;
-    border-width: 0 5px 10px;
-    background: #2a2e39;
+
+/*End Menu*/
+/*******************/
+
+/*******************/
+/*5.4 Footer footer*/
+
+.footer {
+    bottom:0;
+    font-size: 15px;
+    height:50px; 
+    padding: 10px 0;
+    position:absolute;
+    width:100%;
 }
-
-.item__image {
-
-    min-height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    -webkit-transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
-    transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
+.footer ul {float: left; margin: 0; padding: 0; }
+.footer ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: lowercase;
 }
-
-.item:hover .item__image {
-    opacity: 1;
-    -webkit-transform: translate3d(0, -50%, 0);
-    transform: translate3d(0, -50%, 0);
-}
-
-.item__title {
-
-    padding: 1em;
-    color: #dbdbdb;
-    font-size: 1.85em;
-    font-family: "Playfair Display", Georgia, serif;
-    line-height: 1;
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-.item:hover .item__title {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 20px, 0);
-    transform: translate3d(0, 20px, 0);
-}
+.footer a {text-decoration: none; margin: 0 10px;}
+.footer a:hover, .footer a:active {text-decoration: underline;}
+.footer li:first-child a {margin-left: 4px;}
+.footer p {margin: 0; text-align: right; padding-right: 3px;}
+.footer ul li:after {content:" | "}
+.footer ul li:last-child:after {content:"";}
 
 
-/* Media Queries */
+/*End Footer*/
+/*******************/
 
-@media screen and (max-width: 1440px) {
-    .item {
-         height: 30vw;
-    }
-}
+
+/*******************/
+
+/* 6.0 Media Queries */
+/*******************/
+
+
 
 @media screen and (max-width: 1000px) {
-    .item {
-         height: 45vw;
-    }
-    .item,
+
     .intro__content {
         font-size: 0.85em;
     }
@@ -524,9 +489,9 @@ nav li:hover a {
         transform: translate3d(0, -100%, 0) translate3d(0, 27%, 0);
     }
 }
-
-/*bootstrap override*/
-
+/************************/
+/*7.0 bootstrap override*/
+/********************/
 .table tbody>tr>td { 
      border-top: none; 
  }
@@ -561,34 +526,6 @@ border-color: #C0C0C0;
 .nav-tabs {
     border:none;
 }
-
-/*  footer */
-.footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:50px; 
-    padding: 10px 0;
-    font-size: 15px;
-
-
-}
-
-
-.footer ul {margin: 0; padding: 0; float: left;}
-.footer ul li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: inline-block;
-    text-transform: lowercase;
-}
-.footer ul li:after {content:" | "}
-.footer ul li:last-child:after {content:"";}
-.footer p {margin: 0; text-align: right; padding-right: 3px;}
-.footer a {text-decoration: none; margin: 0 10px;}
-.footer li:first-child a {margin-left: 4px;}
-.footer a:hover, .footer a:active {text-decoration: underline;}
 
 
 
