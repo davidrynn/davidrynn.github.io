@@ -5,9 +5,11 @@ require_once('../inc/config.php');
 include(ROOT_PATH . 'inc/header.php');
  ?>
 
- <div id="contain" class="contain">
+<div id="contain" class="contain">
   
 <div class="<?php echo $page ?> intro">
+    <!-- parallax? -->
+<section id="intro" data-speed="6" data-type="background">
 <ul class="nav nav-tabs">
   <li id="resume" role="presentation" class="active" ><a href="#">Resume</a></li>
   <li id="pictures" role="presentation"><a href="#">Pictures</a></li>
@@ -20,6 +22,7 @@ include(ROOT_PATH . 'inc/header.php');
 
 
 </div>
+</section>
 
   
 <?php include(ROOT_PATH . 'inc/footer.php'); ?>

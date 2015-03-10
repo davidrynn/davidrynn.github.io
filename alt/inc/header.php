@@ -21,6 +21,7 @@
   <script src="<?php echo BASE_URL; ?>js/bootstrap-image-gallery.min.js"></script>
 
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="<?php echo BASE_URL; ?>js/init.js"></script>
   <link rel="icon" href="favicon.ico">
 
 

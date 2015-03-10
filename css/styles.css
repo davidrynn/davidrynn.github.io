@@ -104,7 +104,18 @@ h2 {
 
     /*4.1 Acting*/
     /*******************/
-.acting.intro{
+
+    #intro { 
+    background: url(images/davidIndex.pic.jpg) no-repeat top left fixed;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.pic.jpg)', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.pic.jpg)', sizingMethod='scale')";
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+/*.acting.intro{
 
     background: url(images/davidIndex.pic.jpg) no-repeat top left fixed;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.pic.jpg)', sizingMethod='scale');
@@ -113,7 +124,7 @@ h2 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+}*/
 /*End 4.1 Acting*/
 /*******************/
 
@@ -529,5 +540,17 @@ border-color: #C0C0C0;
 
 
 
-
+/*********test***********/
+.testnav {
+    list-style: none;
+    background: #111;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
 
