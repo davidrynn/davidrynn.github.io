@@ -105,7 +105,8 @@ h2 {
     /*4.1 Acting*/
     /*******************/
 
-    #intro { 
+.acting.intro{
+
     background: url(images/davidIndex.pic.jpg) no-repeat top left fixed;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.pic.jpg)', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.pic.jpg)', sizingMethod='scale')";
@@ -113,18 +114,7 @@ h2 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
-/*.acting.intro{
-
-    background: url(images/davidIndex.pic.jpg) no-repeat top left fixed;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.pic.jpg)', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.pic.jpg)', sizingMethod='scale')";
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}*/
 /*End 4.1 Acting*/
 /*******************/
 
