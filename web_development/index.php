@@ -1,7 +1,7 @@
 <?php 
 require_once('../inc/config.php');
 
-$pageTitle = "Web Development";
+$pageTitle = "Coding Experience";
 $page = "web_development";
 include(ROOT_PATH . 'inc/header.php');
  ?>
@@ -23,24 +23,30 @@ include(ROOT_PATH . 'inc/header.php');
       </thead>
       <tbody>
         <tr>
+          <td>Objective C</td>
+        </tr>
+        <tr>
+          <td>Swift</td>
+        </tr>
+        <tr>
           <td>Javascript</td>
           <td>jQuery</td>
           <td>Git</td>
         </tr>
         <tr>
           <td>Java</td>
-          <td>Ruby on Rails</td>
+          <td>Cocoa</td>
           <td>AWS</td>
         </tr>
         <tr>
           <td>HTML</td>
-          <td>Wordpress</td>
+          <td></td>
           <td>Heroku</td>
         </tr>
         <tr>
           <td>CSS</td>
           <td></td>
-          <td>Emacs/Vim</td>
+          <td>/td>
         </tr>
         <tr>
           <td>PHP</td>
