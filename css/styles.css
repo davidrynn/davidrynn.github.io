@@ -544,3 +544,57 @@ border-color: #C0C0C0;
     z-index: 0;
 }
 
+/*Extra Misc*/
+
+
+
+.BAGNarrowRow
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.BAGTallRow
+{
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+}
+
+.BAGWideSpacer
+{
+  height:45px;
+}
+
+.BAGNarrowSpacer
+{
+  height:15px;
+}
+
+
+.BAGLightRow
+{
+  background-color: #f8f8f8;
+  max-width: 100%;
+}
+
+.BAGDarkRow
+{
+  background-color: #dcdcdc;
+  max-width: 100%;
+}
+
+
+.mockUpPhoto
+{
+  width:209px;
+  height:400px;
+}
+
+
+.logoText
+{ 
+/*    height: 55px;
+    padding-top: 15px;*/
+}
+
