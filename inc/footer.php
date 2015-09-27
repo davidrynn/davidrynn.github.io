@@ -21,7 +21,7 @@
 			<ul>
 				<?php 
 
-					$links = array("home" => "Home", "web_development" => "Coding", "acting" => "Other Stuff", "contact" => "Contact");
+					$links = array("home" => "Home", "coding" => "Coding", "acting" => "Other Stuff", "contact" => "Contact");
 					foreach ($links as $key => $link){
 					if ($link == "Home" && $pageTitle != "Home") { ?>
 

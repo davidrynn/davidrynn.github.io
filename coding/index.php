@@ -11,62 +11,12 @@ include(ROOT_PATH . 'inc/header.php');
   <div class="<?php echo $page ?> intro">
 
    <div class="container">
-    <div class="bs-example" data-example-id="simple-table">
-      <table class="table table-condensed">
-        <caption><h3><i class="fa fa-pencil fa-2x"></i>Skills</h3></caption>
-        <thead>
-          <tr>
-            <th>Languages</th>
-            <th>Frameworks/Libraries</th>
-            <th>Version Control/Deployment</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Objective C</td>
-            <td>jQuery</td>
-            <td>Git</td>
-          </tr>
-          <tr>
-            <td>Swift</td>
-            <td>SpriteKit</td>
-            <td>AWS</td>
-          </tr>
-          <tr>
-            <td>Javascript</td>
-            <td>MPMedia/AVAudio</td>
-            <td>Heroku</td>
-
-          </tr>
-          <tr>
-            <td>Java</td>
-            <td></td>
-             <td></td>
-
-          </tr>
-          <tr>
-            <td>HTML</td>
-
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>PHP</td>
-            <td></td>
-            <td></td>
-          </tr>
-
-        </tbody>
-      </table>
-    </div><!-- /example -->
+    
 
      <div class="bgImageContainer">
-      <div class="row BAGTallRow" style="padding-top:125px;padding-bottom:125px">
+      <div class="row BAGTallRow" style="padding-top:70px;padding-bottom:50px">
         <div class="large-12 columns centeredText">
-            <h2 class="whiteText workFont">MOBILE APP DEVELOPMENT</h2>
+            <h2 class="whiteText workFont">Mobile App Development</h2>
 <!--             <div class="BAGWideSpacer"></div>
             <div class="BAGNarrowSpacer"></div> -->
 <!--             <a href="#bottomOfPage" class="medium round button lemonMilkFont" id="viewOurWorkButton">View Our Work</a>
@@ -152,10 +102,15 @@ include(ROOT_PATH . 'inc/header.php');
       </div>
     </div>
 
-
+     <div class="bgImageContainer">
+      <div class="row BAGTallRow" style="padding-top:125px;padding-bottom:50px">
+        <div class="large-12 columns centeredText">
+            <h2 class="whiteText workFont">Web Development Projects</h2>
+        </div>
+      </div>
+    </div>
 
     <div class="row webDev">
-      <h3><i class="fa fa-cogs fa-2x"></i>Web Development Projects</h3>
       <div class="col-md-6">
         <a href="http://www.scottanddave.net" target="_blank"><img src="<?php echo BASE_URL; ?>img/scottanddave.png" class="img-responsive" alt="Wordatic game"></a>
       </div>
@@ -186,6 +141,58 @@ include(ROOT_PATH . 'inc/header.php');
  </div>
 
 </div>
+
+<div class="bs-example" data-example-id="simple-table">
+      <table class="table table-condensed">
+        <caption><h3>Skills</h3></caption>
+        <thead>
+          <tr>
+            <th>Languages</th>
+            <th>Frameworks/Libraries</th>
+            <th>Version Control/Deployment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Objective C</td>
+            <td>jQuery</td>
+            <td>Git</td>
+          </tr>
+          <tr>
+            <td>Swift</td>
+            <td>SpriteKit</td>
+            <td>AWS</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+            <td>MPMedia/AVAudio</td>
+            <td>Heroku</td>
+
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>Bootstrap</td>
+             <td></td>
+
+          </tr>
+          <tr>
+            <td>HTML</td>
+
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>PHP</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div><!-- /example -->
 </div><!-- /container -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
