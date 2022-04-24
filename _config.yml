@@ -1,1 +1,4 @@
-theme: jekyll-theme-minimal
+theme: minima
+title: David's Coding Blog
+author: GitHub User
+email: david@davidrynn.com
