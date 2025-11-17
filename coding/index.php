@@ -48,6 +48,7 @@ include(ROOT_PATH . 'inc/header.php');
       <li>Shuffle and loop functions with buttons directly in the view</li>
       <li>Easy navigation between song, album and artist</li>
       </ul>
+      <a href="https://itunes.apple.com/us/app/simple-music-player/id1044856386?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:165px;height:40px;"></a>
       <!-- <a href="https://geo.itunes.apple.com/us/app/starfaller-simple-fun-addicting/id915689887?mt=8" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:165px;height:40px;"></a> -->
       </p>
 

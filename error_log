@@ -1,0 +1,681 @@
+[22-Feb-2024 20:22:34 America/Chicago] PHP Warning:  Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) in /home1/davidryn/public_html/test.php on line 53
+[29-Feb-2024 19:19:28 America/Chicago] PHP Warning:  Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) in /home1/davidryn/public_html/test.php on line 53
+[03-Mar-2024 07:56:10 America/Chicago] PHP Warning:  Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) in /home1/davidryn/public_html/test.php on line 53
+[05-Mar-2024 10:42:00 America/Chicago] PHP Warning:  Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) in /home1/davidryn/public_html/test.php on line 53
+[05-Mar-2024 13:27:42 America/Chicago] PHP Warning:  Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) in /home1/davidryn/public_html/test.php on line 53
+[11-Mar-2024 04:07:27 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[12-Mar-2024 23:19:03 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[26-Mar-2024 22:34:25 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[07-Apr-2024 17:15:49 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[11-Apr-2024 15:26:02 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[19-Apr-2024 15:46:29 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[28-Apr-2024 10:00:56 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[08-May-2024 16:23:15 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[09-May-2024 13:05:31 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[21-May-2024 12:51:44 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[21-May-2024 21:19:57 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[28-May-2024 09:02:35 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[05-Jun-2024 19:59:15 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[05-Jun-2024 22:26:41 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[13-Jun-2024 01:08:51 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[13-Jun-2024 14:26:29 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[30-Jun-2024 17:39:43 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Jul-2024 21:00:51 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[06-Jul-2024 19:16:08 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[05-Aug-2024 00:46:37 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[05-Aug-2024 00:52:57 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[09-Aug-2024 10:53:48 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[17-Aug-2024 11:11:00 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[19-Aug-2024 08:45:12 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[19-Aug-2024 13:14:07 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[19-Aug-2024 19:44:36 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[19-Aug-2024 23:34:59 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[20-Aug-2024 23:26:52 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[22-Aug-2024 22:20:45 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[23-Aug-2024 12:16:46 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[24-Aug-2024 18:57:37 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[28-Aug-2024 00:45:00 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[28-Aug-2024 10:10:18 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[28-Aug-2024 15:50:38 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[29-Aug-2024 14:47:54 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[31-Aug-2024 03:05:17 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Sep-2024 18:54:26 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Sep-2024 19:04:59 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[05-Sep-2024 12:24:24 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[07-Sep-2024 18:27:24 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[09-Sep-2024 06:26:23 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[12-Sep-2024 04:55:22 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[13-Sep-2024 00:10:54 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[14-Sep-2024 16:29:27 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[15-Sep-2024 15:15:25 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[15-Sep-2024 15:17:08 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[19-Sep-2024 06:49:10 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[19-Sep-2024 17:18:05 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[20-Sep-2024 04:07:54 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[20-Sep-2024 20:30:30 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[25-Sep-2024 14:41:19 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[25-Sep-2024 14:45:21 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[01-Oct-2024 05:16:32 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[01-Oct-2024 05:21:50 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[04-Oct-2024 05:06:52 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[04-Oct-2024 05:11:15 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[05-Oct-2024 18:42:07 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[06-Oct-2024 21:43:15 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[07-Oct-2024 23:16:49 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[07-Oct-2024 23:19:18 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[08-Oct-2024 23:06:33 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[08-Oct-2024 23:12:08 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[09-Oct-2024 06:35:50 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[09-Oct-2024 13:58:37 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[10-Oct-2024 07:32:18 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[10-Oct-2024 11:06:10 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[10-Oct-2024 15:46:39 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[10-Oct-2024 15:51:33 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[12-Oct-2024 11:07:27 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[13-Oct-2024 07:51:17 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[14-Oct-2024 02:39:08 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[15-Oct-2024 16:43:43 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[16-Oct-2024 14:46:49 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[20-Oct-2024 11:24:53 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[21-Oct-2024 17:59:31 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[21-Oct-2024 18:22:47 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[22-Oct-2024 04:59:42 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[22-Oct-2024 06:14:45 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[22-Oct-2024 06:43:16 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[22-Oct-2024 14:08:57 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[23-Oct-2024 08:02:36 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[24-Oct-2024 05:30:50 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[25-Oct-2024 18:02:26 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[25-Oct-2024 21:04:56 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[27-Oct-2024 00:20:08 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[28-Oct-2024 09:40:03 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[05-Nov-2024 16:58:36 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[06-Nov-2024 03:03:18 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[06-Nov-2024 16:39:18 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[07-Nov-2024 22:20:31 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[09-Nov-2024 08:25:23 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[11-Nov-2024 09:31:01 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[17-Nov-2024 06:48:27 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[22-Nov-2024 16:39:19 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[24-Nov-2024 06:46:49 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[24-Nov-2024 17:28:56 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[26-Nov-2024 12:59:48 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Dec-2024 09:02:46 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Dec-2024 09:03:18 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[08-Dec-2024 22:19:28 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[09-Dec-2024 08:39:07 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[12-Dec-2024 08:25:05 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[13-Dec-2024 08:21:09 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[18-Dec-2024 19:01:32 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[24-Dec-2024 04:47:39 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[25-Dec-2024 08:03:44 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[28-Dec-2024 10:36:49 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[28-Dec-2024 17:56:28 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[06-Jan-2025 00:38:17 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[15-Jan-2025 17:17:16 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[20-Jan-2025 16:55:20 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Feb-2025 03:39:48 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Feb-2025 12:31:37 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Feb-2025 14:23:15 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Feb-2025 15:42:21 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[08-Feb-2025 11:53:54 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[10-Feb-2025 23:13:14 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[18-Feb-2025 23:20:48 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[20-Feb-2025 07:40:04 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[23-Feb-2025 14:34:42 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[25-Feb-2025 23:33:35 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[27-Feb-2025 17:25:36 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[27-Feb-2025 17:29:27 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[01-Mar-2025 12:15:16 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[03-Mar-2025 03:51:41 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[04-Mar-2025 16:31:18 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[06-Mar-2025 21:38:29 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[06-Mar-2025 21:38:45 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[07-Mar-2025 05:56:16 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[08-Mar-2025 00:17:55 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[08-Mar-2025 14:40:21 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[09-Mar-2025 12:11:57 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[09-Mar-2025 23:40:04 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[10-Mar-2025 10:02:34 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[11-Mar-2025 08:02:19 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[14-Mar-2025 13:23:23 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[16-Mar-2025 22:36:35 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[19-Mar-2025 05:56:03 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[19-Mar-2025 05:57:34 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[20-Mar-2025 02:39:57 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[20-Mar-2025 02:42:04 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[22-Mar-2025 07:16:39 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[22-Mar-2025 07:18:16 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[01-Apr-2025 13:35:49 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[01-Apr-2025 21:55:00 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Apr-2025 21:44:20 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[23-May-2025 19:52:53 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[23-May-2025 19:53:10 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[22-Jun-2025 23:41:56 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Jul-2025 02:50:14 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[05-Jul-2025 01:59:05 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[05-Jul-2025 01:59:06 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[07-Jul-2025 17:33:03 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[07-Jul-2025 17:36:30 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[11-Jul-2025 04:25:42 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[14-Jul-2025 16:18:07 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[06-Aug-2025 22:11:09 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[07-Aug-2025 09:33:45 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[07-Aug-2025 17:17:12 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[08-Aug-2025 00:20:33 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[08-Aug-2025 00:20:39 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[08-Aug-2025 00:20:55 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Sep-2025 08:47:40 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[02-Sep-2025 17:31:40 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[17-Oct-2025 21:21:09 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[23-Oct-2025 03:15:09 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[29-Oct-2025 01:43:29 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[07-Nov-2025 11:08:11 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53
+[08-Nov-2025 17:00:00 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in /home1/davidryn/public_html/test.php:53
+Stack trace:
+#0 {main}
+  thrown in /home1/davidryn/public_html/test.php on line 53

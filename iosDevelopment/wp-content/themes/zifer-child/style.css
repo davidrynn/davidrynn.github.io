@@ -1,0 +1,370 @@
+/*
+ Theme Name:	 Zifer Child
+ Theme URI:		 https://themeisle.com/themes/zifer-child/
+ Description:	 Zifer Child is a user optimized Photography WordPress Theme built with latest technologies, easy to customize. Use it to create an awesome photography portfolio.
+ Author: 		 ThemeIsle
+ Author URI:	 https://themeisle.com
+ Template:		 zerif-lite
+ Version:		 1.0.4
+ Tags: 			 black, gray, red, white, one-column, two-columns, right-sidebar,fixed-layout,light,front-page-post-form,full-width-template,rtl-language-support,sticky-post,theme-options,responsive-layout, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready,photoblogging
+ Text Domain:	 zifer-child
+ Domain Path:    /languages/
+*/
+
+@import url("../zerif-lite/style.css");
+
+/* Add your custom css below
+-------------------------------------------------------------- */
+body, h1, h2, h3, h4, h5, h6, .comment-reply-link, .newsletter h3 {
+	font-family: 'Open Sans', sans-serif !important;
+}
+html{
+	font-size: 10px;
+}
+body,
+button,
+input,
+select,
+textarea{
+	font-size: 16px;
+}
+pre{
+	font-size: 15px;
+}
+
+#main-nav {
+	position: relative !important;
+	margin-bottom: 0;
+}
+
+#main-nav.fixed {
+	position: relative !important;
+}
+
+#main-nav {
+	min-height: 60px;
+}
+
+.navbar-brand {
+	line-height: 28px;
+	height: 60px;
+}
+
+.navbar-inverse .navbar-nav > li {
+	margin:0;
+	padding:0;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+	padding: 12px 15px;
+	line-height: 36px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,.navbar-inverse .navbar-nav > li > a:active,.navbar-inverse .navbar-nav > li > a:focus{
+	color: #ffffff;
+	background: #3ab0e2;
+}
+
+.row-fix {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+section.big-title{
+	background-repeat: no-repeat;
+	background-position: center top;
+	text-align:left;
+	min-height: 300px;
+	margin-top: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+section.big-title .big-title-over{
+	width: 100%;
+	min-height: 300px;
+	background: rgba(0,0,0,0.4);
+	height: 100%;
+}
+
+section.big-title .intro-text{
+	text-align:left;
+	margin-top: 60px;
+	line-height: 42px;
+	font-size: 30px;
+}
+
+section.big-title .intro-content{
+	font-weight: 300;
+	color:#ffffff;
+}
+
+section.big-title .buttons{
+	text-align:left;
+	margin-top: 32px;
+	margin-bottom: auto;
+}
+
+section.big-title .buttons .btn:first-child{
+	margin-left: 0;
+	border-radius: 12px;
+	border-bottom: 4px solid #1b90c2;
+	padding: 8px 24px;
+}
+
+.section-header{
+	text-align:left;
+	padding-bottom: 15px;
+	margin-top: 50px;
+}
+
+.section-header h2{
+	padding-bottom: 0;
+	border-left: 2px solid #3ab0e2;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	padding-left: 1em;
+}
+
+.section-content{
+	text-align:left;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+section.about{
+	padding-bottom: 75px;
+}
+
+.categ-block{
+	width: 22%;
+	height: 0;
+	padding: 22% 0 0 0;
+	overflow: hidden;
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	float:left;
+	margin:1.5%;
+}
+
+.categ-block:first-child{
+	width: 47%;
+	padding: 47% 0 0 0;
+	margin:1.5%;
+}
+
+.cat-block-5, .cat-block-3{
+	margin-right: 0;
+}
+
+.categ-block img{
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width:100%;
+	height: auto;
+	bottom: -50%;
+	right: -50%;
+	margin: auto;
+	max-width: initial;
+}
+
+.categ-block img.landscape {
+	width:auto;
+	height:100%;
+}
+
+section.custom-category .section-content{
+	margin-right: -1.5%;
+	margin-left: -1.5%;
+}
+
+.cat-hover{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100.02%;
+	background: rgba(0,0,0,0.6);
+	padding: 3%;
+	color:#fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 0.5s, opacity 0.5s linear;
+	display:table;
+	height:100%;
+}
+
+.cat-hover span{
+	font-size: 18px;
+	font-weight: 600;
+	display:table-cell;
+	vertical-align:middle;
+	line-height: 1.4;
+}
+.categ-block:first-child .cat-hover span{
+	font-size: 26px;
+}
+.categ-block:hover .cat-hover{
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+
+}
+
+.latest-news{
+	padding-top: 15px;
+	padding-bottom: 80px;
+}
+
+#homepage-latestnews .latestnews-box .latestnews-title a:before{
+	width:0;
+}
+
+#homepage-latestnews .latestnews-box{
+	padding: 0;
+	text-align: left;
+	overflow: hidden;
+}
+
+#homepage-latestnews .latestnews-box img{
+	width:100%;
+}
+
+#homepage-latestnews .latestnews-box .latesnews-content{
+	padding: 16% 8% 8%;
+	position: absolute;
+	top: 0;
+	color: #fff;
+	background: rgba(0,0,0,0.6);
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	width: 100.02%;
+	transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+#homepage-latestnews .latestnews-box:hover .latesnews-content{
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+
+#homepage-latestnews {
+	margin:20px 0 0;
+}
+
+#homepage-latestnews .carousel-inner .item .latestnews-title{
+	color:#fff;
+	font-size: 18px;
+	font-weight:600;
+	line-height: 24px;
+}
+
+#homepage-latestnews .carousel-inner .read-more{
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 700;
+
+}
+
+#homepage-latestnews .carousel-inner .read-more:hover{
+	color:#eee;
+}
+
+section.latest-news{
+	min-height: 500px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #00040F;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.single-header-title{
+	text-align: left;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 42px;
+	color:#fff;
+	background-color: #00040F;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 20px 0;
+}
+
+article .entry-meta a,article .entry-meta i.fa {
+	color:#3ab0e9;
+}
+
+article .entry-meta a:hover {
+	color:#18729e;
+}
+
+article .entry-meta {
+	font-style: italic;
+}
+
+article .entry-header .entry-thumbnail{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	vertical-align: top;
+	display: inline-block;
+	padding: 50% 0 0;
+}
+
+article .entry-header .entry-thumbnail img{
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width:100%;
+	height: auto;
+	bottom: -50%;
+	right: -50%;
+	margin: auto;
+	max-width: initial;
+	max-height: initial;
+}
+
+article .entry-header .entry-thumbnail img.landscape {
+	width:auto;
+	height:100%;
+}
+
+
+.comment-form #submit, .comment-reply-link{
+	color: #FFF;
+	background-color: #428BCA;
+	border-color: #357EBD;
+}
+
+.comment-form #submit:hover, .comment-form #submit:focus, .comment-form #submit:active{
+	color: #FFF;
+	background-color: #3276B1;
+	border-color: #285E8E;
+}
+
+.widget .widget-title:before {
+	width:0;
+}
+
+.entry-title:before{
+	width:0;
+}
+
+.page-header .page-title {
+	margin-bottom: 30px;
+}

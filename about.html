@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+	<head>
+		<title>David Rynn's Page</title>
+
+		<link href="css/aboutstyle.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Seymour+One' rel='stylesheet' type='text/css'>
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+	</head>
+	<style>
+	.map {
+		background-image: url("images/map0.jpg");
+
+	}
+	</style>
+
+<body>
+	<div class="header">
+		<img src="images/_MG_6398.sml.jpg">
+		<h2>David's Life Journey... So Far (About Me) </h2>
+	</div>
+
+	<div class="map">
+		<button class="laguna"><b>1.</b> I grew up here</button>
+		<button class="santaBarbara"><b>2.</b> I went to college here</button>
+		<button class="dc"><b>3.</b>  I worked here after college</button>
+	
+		<button class="portland"><b>4.</b>  I went to law school here</button>
+		<button class="seattle"><b>5.</b>  I was a public defender here</button>
+		<button class="nyc"><b>6.</b>  I finally moved to the Big City</button>
+	</div>
+	<div class="info">More Info:       </div>
+
+
+
+
+<footer>
+CONTACT INFO:<br />Email:<a href="mailto:davidrynn@gmail.com?Subject=Your%20Website" target="_top">
+davidrynn@gmail.com</a><br />
+Phone: 646.763.0060
+</footer>
+<script>
+$(".laguna").click(function() {
+	$(".map").css("background-image","url(images/map0.jpg)");
+	$(".info").html("<a href='http://www.lagunabeachcity.net/' target='_blank'>Laguna Beach</a>");
+});
+$(".santaBarbara").click(function() {
+	$(".map").css("background-image","url(images/map1.jpg)");
+	$(".info").html("<a href='http://www.ucsb.edu/' target='_blank'>University of California at Santa Barbara</a>");
+});
+
+$(".dc").click(function() {
+	$(".map").css("background-image","url('images/map2.jpg')");
+	$(".info").html("Interned for <a href='http://en.wikipedia.org/wiki/Howard_Berman' target='_blank'>Congressman Howard Berman</a>");
+});
+$(".portland").click(function() {
+	$(".map").css("background-image","url('images/map3.jpg')");
+	$(".info").html("Went to lawschool at <a href='http://law.lckark.edu/' target='_blank'>Lewis & Clark Law School</a>");
+});
+$(".seattle").click(function() {
+	$(".map").css("background-image","url(images/map4.jpg)");
+	$(".info").html("<a href='http://www.nwdefenders.org/index.html' target='_blank'>Northwest Defenders (not much of a website)</a><br />...but I was in court every day <a href='http://www.kingcounty.gov/courts/SuperiorCourt/kcch.aspx' target='_blank'>here</a>");
+});
+$(".nyc").click(function() {
+	$(".map").css("background-image","url(images/map5.jpg)");
+	$(".map").html("<p><h1>Gave it all up, moved to New York City and <br />Trained in an acting conservatory<a href='http://www.stellaadler.com/classes/professional-conservatory/evening-conservatory/' target='_blank'> here</a><br /><br />Nabbed a tiny part in one episode of a well known <a href='http://en.wikipedia.org/wiki/File:Lawandorder01.jpg' target='_blank'> tv show</a> ... you can watch it <a href='http://www.davidrynn.com/videos' target='_blank'>here</a><br /><br />Then became enmeshed in the improv comedy world <a href='http://newyork.ucbtheatre.com/' target='_blank'> here, </a><br /><br /> and <a href='http://www.magnettheater.com/index.php' target='_blank'> here</a><br /><br />I made a video sketch that went viral<a href='http://www.thestar.com/entertainment/2010/09/17/how_many_canadian_clichs_can_you_fit_in_two_minutes.html' target='_blank'> in Canada</a><br /><br />...And of course made an obscure comedy web series <a href='http://www.scottanddave.net' target='_blank'> here</a><br /><br />In my spare time I've been learning Java and Javascript - I have a <a href='http://www.wordatic.com' target='_blank'>demo here</a><br /><br />The worse part about it is the whole time I've been working <a href='http://www.blbglaw.com' target='_blank'> here</a><br /><br />...And that's got to stop...</h1></p><br/><form method='link' action='index.html'><input type='submit' value='Return to map'></form>");
+	$(".info").html("<br /> ");
+
+
+});
+
+</script>
+</body>
+</html>
