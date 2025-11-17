@@ -71,10 +71,10 @@ h2 {
     width: 100%;
     z-index: 10;
 
-   /*background: url(images/davidIndex.gif) no-repeat right bottom fixed;
+   /*background: url(../images/davidIndex.gif) no-repeat right bottom fixed;
  
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/davidIndex.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/davidIndex.jpg', sizingMethod='scale')";
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -107,9 +107,9 @@ h2 {
 
 .acting.intro{
 
-    background: url(images/davidIndex.pic.jpg) no-repeat top left fixed;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.pic.jpg)', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/davidIndex.pic.jpg)', sizingMethod='scale')";
+    background: url(../images/davidIndex.pic.jpg) no-repeat top left fixed;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/davidIndex.pic.jpg)', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/davidIndex.pic.jpg)', sizingMethod='scale')";
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -182,7 +182,7 @@ form tr {
 }
 
 .home.intro::after {
-    background: url(images/davidIndex.gif) no-repeat right bottom fixed;
+    background: url(../images/davidIndex.gif) no-repeat right bottom fixed;
     background-size: cover;
     bottom: 0;
     content: "";
