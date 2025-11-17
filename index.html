@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.foundation5.zurb.com/foundation.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|IM+Fell+DW+Pica+SC|IM+Fell+English|Special+Elite" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+  <script src="js/bootstrap-image-gallery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <div id="contain" class="contain">
+    <div class="home intro">
+      <h1>David Rynn</h1>
+      <h2>Developer &amp; More...</h2>
+
+      <button class="trigger hvr-pulse">
+        <svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRation="none">
+          <g class="icon icon--grid">
+            <circle class="outer" cx="29" cy="30" r="28" />
+            <circle cx="29" cy="30" r="20" />
+          </g>
+          <g class="icon icon--cross">
+            <line x1="4.5" y1="55.5" x2="54.953" y2="5.046" />
+            <line x1="54.953" y1="55.5" x2="4.5" y2="5.047" />
+          </g>
+        </svg>
+        <span>View content</span>
+      </button>
+    </div><!-- /intro -->
+
+    <div class="menu-wrap">
+      <nav class="menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/coding">Coding</a></li>
+          <li><a href="/coderBlog">Code Blog</a></li>
+          <li><a href="/acting">Other Stuff</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer home">
+      <div class="wrapper">
+        <ul>
+          <li><a href="https://twitter.com/davidrynn" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+          <li><a href="https://www.facebook.com/david.rynn.3" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+          <li><a href="https://www.linkedin.com/pub/david-rynn/2/54b/6b9" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+          <li><a href="https://www.github.com/davidrynn" target="_blank"><i class="fa fa-github-square"></i></a></li>
+        </ul>
+        <p>&copy;2024 David Rynn</p>
+      </div>
+    </div>
+  </div><!-- /contain -->
+
+  <script src="js/classie.js"></script>
+  <script>
+    (function() {
+      var container = document.getElementById('contain'),
+          trigger = container.querySelector('button.trigger');
+
+      function toggleContent() {
+        if (classie.has(container, 'contain--open')) {
+          classie.remove(container, 'contain--open');
+          classie.remove(trigger, 'trigger--active');
+          window.addEventListener('scroll', noscroll);
+        } else {
+          classie.add(container, 'contain--open');
+          classie.add(trigger, 'trigger--active');
+          window.removeEventListener('scroll', noscroll);
+        }
+      }
+
+      function noscroll() {
+        window.scrollTo(0, 0);
+      }
+
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+      window.addEventListener('scroll', noscroll);
+      trigger.addEventListener('click', toggleContent);
+    })();
+  </script>
+</body>
+</html>
