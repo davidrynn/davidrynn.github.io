@@ -181,17 +181,37 @@ form tr {
     position: fixed;
 }
 
+.home.intro {
+    /* Sepia base so no gap can ever flash white (e.g. during the menu-open transform) */
+    background-color: #cabf9f;
+}
+
 .home.intro::after {
-    background: url(../images/davidIndex.gif) no-repeat right bottom fixed;
+    /* Static fallback shown instantly and if the video can't play.
+       No background-attachment: fixed here — it's buggy under CSS transforms
+       (menu-open) and unsupported on iOS. */
+    background: url(../images/davidIndex.jpg) no-repeat right bottom;
     background-size: cover;
     bottom: 0;
     content: "";
     left: 0;
     opacity: 1;
     position: absolute;
-    right: 0;    
+    right: 0;
     top: 0;
-    z-index: -1;  
+    z-index: -2;
+}
+
+.home.intro .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right bottom;
+    background-color: #cabf9f;
+    z-index: -1;
 }
 
     /* End 4.3 Home*/
