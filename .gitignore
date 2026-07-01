@@ -2,3 +2,8 @@ img
 css/images
 css/bootstrap*
 js/bootstra*
+
+# Secrets / backups — never commit (removed in P0 security cleanup)
+wp-config.php
+**/wp-config.php
+**/backupwordpress-*-backups/
