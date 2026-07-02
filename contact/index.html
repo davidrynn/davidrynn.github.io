@@ -1,53 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <meta name="description" content="Get in touch with David Rynn.">
+  <title>Contact</title>
+  <link rel="stylesheet" href="/css/normalize.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|IM+Fell+DW+Pica+SC|IM+Fell+English|Special+Elite" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/favicon.ico">
 </head>
 <body>
   <div id="contain" class="contain">
-    <div class="home intro">
-      <video class="bg-video" autoplay loop muted playsinline preload="auto" poster="images/davidIndex.jpg">
-        <source src="images/davidIndex.av1.mp4" type='video/mp4; codecs="av01.0.05M.08"'>
-        <source src="images/davidIndex.mp4" type="video/mp4">
-      </video>
-      <h1>David Rynn</h1>
-      <h2>Developer &amp; More...</h2>
+    <div class="contact intro">
+      <div class="contact">
+        <div class="wrapper">
 
-      <button class="trigger hvr-pulse">
-        <svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRation="none">
-          <g class="icon icon--grid">
-            <circle class="outer" cx="29" cy="30" r="28" />
-            <circle cx="29" cy="30" r="20" />
-          </g>
-          <g class="icon icon--cross">
-            <line x1="4.5" y1="55.5" x2="54.953" y2="5.046" />
-            <line x1="54.953" y1="55.5" x2="4.5" y2="5.047" />
-          </g>
-        </svg>
-        <span>View content</span>
-      </button>
+          <h1>Contact</h1>
+          <p>Feel free to reach out &mdash; I&rsquo;d love to hear from you.</p>
+          <p style="text-align:center; width:auto;">
+            <a href="mailto:davidrynn@gmail.com?Subject=Hello%20from%20davidrynn.com"
+               class="contact-email">davidrynn@gmail.com</a>
+          </p>
+
+          <!--
+            Want a real submit-a-message form instead of a mailto link?
+            Sign up (free) at https://formspree.io, create a form pointed at
+            davidrynn@gmail.com, then replace YOUR_FORM_ID below and delete
+            the mailto paragraph above:
+
+          <form method="post" action="https://formspree.io/f/YOUR_FORM_ID">
+            <table>
+              <tr><th><label for="name">Name</label></th>
+                  <td><input type="text" name="name" id="name" required></td></tr>
+              <tr><th><label for="email">Email</label></th>
+                  <td><input type="email" name="email" id="email" required></td></tr>
+              <tr><th><label for="message">Message</label></th>
+                  <td><textarea name="message" id="message" required></textarea></td></tr>
+            </table>
+            <input type="submit" value="send">
+          </form>
+          -->
+
+        </div>
+      </div>
     </div><!-- /intro -->
 
     <div class="menu-wrap">
       <nav class="menu">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/coding">Coding</a></li>
-          <li><a href="/acting">Other Stuff</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="/coding/">Coding</a></li>
+          <li><a href="/acting/">Other Stuff</a></li>
+          <li><a href="/contact/">Contact</a></li>
         </ul>
       </nav>
     </div>
 
-    <div class="footer home">
+    <div class="footer contact">
       <div class="wrapper">
         <ul>
           <li><a href="https://twitter.com/davidrynn" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
@@ -60,7 +72,7 @@
     </div>
   </div><!-- /contain -->
 
-  <script src="js/classie.js"></script>
+  <script src="/js/classie.js"></script>
   <script>
     (function() {
       var container = document.getElementById('contain'),
@@ -84,7 +96,10 @@
 
       document.body.scrollTop = document.documentElement.scrollTop = 0;
       window.addEventListener('scroll', noscroll);
-      trigger.addEventListener('click', toggleContent);
+
+      if (trigger) {
+        trigger.addEventListener('click', toggleContent);
+      }
     })();
   </script>
 </body>

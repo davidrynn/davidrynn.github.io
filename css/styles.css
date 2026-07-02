@@ -150,6 +150,20 @@ form input[type="submit"] {
     width: 375px;
 }
 
+a.contact-email {
+    background: rgb(104, 104, 126);
+    border: 1px solid #8e8e46;
+    border-radius: 2px;
+    color: #FFF;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 14px 28px;
+    text-decoration: none;
+    text-transform: none;
+}
+a.contact-email:hover { background: rgb(84, 84, 106); }
+
 form table { margin-bottom: 16px; width: 375px;}
 form th {
     border-right: 1px solid #CCC;
