@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clear Next Step &mdash; Support &amp; Privacy</title>
+<title>Clear Next Step &mdash; Support</title>
 <style>
   :root {
     --bg: #fbfaf8;
@@ -44,24 +44,31 @@
     margin: 0 0 0.4rem;
   }
   .tagline { color: var(--muted); margin: 0; font-size: 1.05rem; }
-  a.card {
-    display: block;
+  section {
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 14px;
     padding: 1.5rem 1.5rem;
     margin: 0 0 1.25rem;
-    color: inherit;
-    text-decoration: none;
   }
-  a.card:hover h2 { text-decoration: underline; }
   h2 {
     font-size: 1.15rem;
-    margin: 0 0 0.25rem;
+    margin: 0 0 0.75rem;
     letter-spacing: -0.01em;
-    color: var(--accent);
   }
-  p { margin: 0.25rem 0 0; }
+  h3 {
+    font-size: 1rem;
+    margin: 1.25rem 0 0.25rem;
+  }
+  h3:first-of-type { margin-top: 0.25rem; }
+  p { margin: 0.5rem 0; }
+  a { color: var(--accent); }
+  .contact {
+    display: inline-block;
+    margin-top: 0.25rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
   .muted { color: var(--muted); }
   footer {
     margin-top: 2.5rem;
@@ -69,6 +76,7 @@
     color: var(--muted);
     font-size: 0.85rem;
   }
+  .faq p { margin-bottom: 1rem; }
 </style>
 </head>
 <body>
@@ -78,15 +86,34 @@
       <p class="tagline">Find one small thing to do next &mdash; private and on-device.</p>
     </header>
 
-    <a class="card" href="/clear-next-step/support">
+    <section>
       <h2>Support</h2>
-      <p class="muted">Questions, feedback, or something not working? Get in touch.</p>
-    </a>
+      <p>Questions, feedback, or something not working? Get in touch and I&rsquo;ll help.</p>
+      <a class="contact" href="mailto:davidrynn@gmail.com">davidrynn@gmail.com</a>
+    </section>
 
-    <a class="card" href="/clear-next-step/privacy">
-      <h2>Privacy Policy</h2>
-      <p class="muted">Clear Next Step does not collect any data.</p>
-    </a>
+    <section class="faq">
+      <h2>Frequently asked</h2>
+
+      <h3>Why does it need an iPhone 15 Pro or later?</h3>
+      <p class="muted">Clear Next Step runs entirely on your device using Apple Intelligence. That
+      on-device model needs an iPhone 15 Pro or later with Apple Intelligence turned on. If your
+      device isn&rsquo;t eligible, the app tells you rather than sending anything to a server.</p>
+
+      <h3>Where is my data?</h3>
+      <p class="muted">On your phone, and only your phone. Everything you write is processed
+      on-device and never leaves it. There&rsquo;s no account and no cloud copy. Anything the app
+      keeps for you &mdash; like a step you come back to &mdash; stays on your device.</p>
+
+      <h3>Do you see what I write?</h3>
+      <p class="muted">No. What you type never reaches me or anyone else. There&rsquo;s no server
+      that could receive it.</p>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <p>Read the <a href="/clear-next-step/privacy">Privacy Policy</a>.</p>
+    </section>
 
     <footer>
       <p>&copy; 2026 Fieldlight Interactive</p>
