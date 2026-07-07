@@ -7,3 +7,7 @@ js/bootstra*
 wp-config.php
 **/wp-config.php
 **/backupwordpress-*-backups/
+
+# Internal app specs — not for the public site
+Clear Next Step/
+.DS_Store
