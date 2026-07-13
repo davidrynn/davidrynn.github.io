@@ -1,0 +1,184 @@
+/* Shared styles for resume pages */
+* { box-sizing: border-box; }
+
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --accent: #0f6b5f;
+  --rule: #e3e6ea;
+  --bg: #f5f6f7;
+  --paper: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.paper {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 2.5rem 2.75rem;
+  box-shadow: 0 2px 12px rgba(31, 36, 48, 0.06);
+}
+
+/* Top bar with site nav / actions */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.topbar a.back {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.topbar a.back:hover { color: var(--accent); }
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.btn:hover { filter: brightness(1.1); }
+
+.btn.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+/* Resume header */
+header.resume h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.01em;
+}
+
+header.resume .role {
+  margin: 0.15rem 0 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+header.resume .contact {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+header.resume .contact a { color: var(--muted); }
+header.resume .contact a:hover { color: var(--accent); }
+
+/* Sections */
+section { margin-top: 1.75rem; }
+
+section h2 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 0.35rem;
+  margin: 0 0 0.85rem;
+}
+
+section p { margin: 0 0 0.75rem; }
+
+.job { margin-bottom: 1.25rem; }
+
+.job h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.job .dates {
+  float: right;
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.job ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.job ul ul {
+  margin-top: 0.25rem;
+}
+
+.job li { margin-bottom: 0.3rem; }
+
+ul.plain {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+ul.plain li { margin-bottom: 0.35rem; }
+
+.note { color: var(--muted); font-style: italic; }
+
+/* Tailored-resume cards on the index page */
+.tailored {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.tailored a.card {
+  display: block;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--paper);
+  transition: border-color 0.15s ease;
+}
+
+.tailored a.card:hover { border-color: var(--accent); }
+
+.tailored a.card strong { color: var(--accent); }
+
+.tailored a.card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: 0.15rem;
+}
+
+/* Print: just the resume, no chrome */
+@media print {
+  body { background: #fff; }
+  .page { padding: 0; max-width: none; }
+  .paper { border: 0; box-shadow: none; padding: 0; border-radius: 0; }
+  .topbar, .tailored-section { display: none; }
+  body { font-size: 12px; }
+}
+
+@media (max-width: 600px) {
+  .paper { padding: 1.5rem 1.25rem; }
+  .job .dates { float: none; display: block; }
+}
