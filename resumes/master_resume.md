@@ -30,7 +30,7 @@ Swift, SwiftUI, GraphQL, Apollo APIs, Structured Concurrency (async/await), Comb
 
 ### Fieldlight Interactive — Independent iOS Product Engineer | 2026 – Present
 
-- Built and released an independent iOS app ("One Clear Step") from concept through App Store launch, owning product definition, UX flow, architecture, implementation, testing, release preparation, and iteration.
+- Built and released an independent iOS app ("Clear Next Step") from concept through App Store launch, owning product definition, UX flow, architecture, implementation, testing, release preparation, and iteration.
 - Designed a focused workflow that helps users move from an unstructured brain dump to a single actionable next step, balancing emotional validation with low-friction task completion.
 - Implemented the app using Swift/SwiftUI and Apple Intelligence/Foundation Models, exploring practical on-device AI patterns for user-facing productivity workflows.
 - Used AI-assisted development tools to accelerate implementation, test edge cases, evaluate UX alternatives, and improve release readiness.
@@ -92,6 +92,6 @@ Flatiron School – iOS Programming (Immersive) | NYU – Java I & II | UCSB –
 - Speaker, Chase iOS Engineering (Internal) — delivered talks on Swift Concurrency adoption and async/await migration patterns; contributed to the iOS concurrency working group.
 - Speaker, iOSoho NYC Meetup (2025) — presented on Apple FoundationModels/Apple Intelligence; showed practical on-device AI patterns and demoed an app that generated lightning talks from prompts.
 - Built AI-assisted side projects spanning procedural terrain experiments in Unity, a DSA study app, and an in-progress game prototype to deepen hands-on Generative AI and LLM product integration skills.
-- Created "One Clear Step" as both a custom GPT and an Apple Intelligence app concept focused on reducing decision paralysis through actionable next-step guidance.
+- Created "Clear Next Step" as both a custom GPT and an Apple Intelligence app concept focused on reducing decision paralysis through actionable next-step guidance.
 - Speaker, iOSoho NYC Meetup (2021) — gave lightning talks on SwiftUI Charts and Regex in Swift.
 <!-- END_SPEAKING -->
