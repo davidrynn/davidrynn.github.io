@@ -1,242 +1,361 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Coding Experience</title>
-
-  <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-  <link rel="stylesheet" href="/css/bootstrap-image-gallery.min.css">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/foundation.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|IM+Fell+DW+Pica+SC|IM+Fell+English|Special+Elite" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-  <script src="/js/bootstrap-image-gallery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <title>David Rynn — Senior iOS Engineer</title>
+  <meta name="description" content="David Rynn is a Senior iOS Engineer in Brooklyn, NY — Swift, SwiftUI, and AI-forward mobile development. Work history, side projects, and custom GPTs.">
   <link rel="icon" href="/favicon.ico">
+  <style>
+    :root {
+      --bg: #f5f6f7;
+      --surface: #ffffff;
+      --ink: #1f2430;
+      --muted: #5b6472;
+      --line: #e3e6ea;
+      --accent: #0f6b5f;
+      --accent-soft: #e5f0ee;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #17181a;
+        --surface: #1f2123;
+        --ink: #ecebe8;
+        --muted: #a3a09a;
+        --line: #2e3033;
+        --accent: #7fb8b2;
+        --accent-soft: #24332f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+
+    /* Nav */
+    nav.site {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding: 1.1rem 0;
+    }
+    nav.site .brand {
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+    nav.site ul {
+      display: flex;
+      gap: 1.15rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    nav.site ul a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    nav.site ul a:hover, nav.site ul a[aria-current] { color: var(--accent); }
+
+    /* Hero */
+    header.hero { padding: 3rem 0 2.25rem; }
+    header.hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    header.hero .role {
+      margin: 0.35rem 0 1rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    header.hero p.blurb {
+      margin: 0 0 1.5rem;
+      max-width: 46rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--surface);
+      text-decoration: none;
+      padding: 0.6rem 1.15rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin: 0 0.5rem 0.5rem 0;
+    }
+    .btn:hover { filter: brightness(1.1); }
+    .btn.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    /* Highlights strip */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.9rem;
+      margin: 0.5rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .stats li {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 0.9rem 1.1rem;
+    }
+    .stats strong { display: block; font-size: 1.25rem; letter-spacing: -0.01em; }
+    .stats span { color: var(--muted); font-size: 0.88rem; }
+
+    /* Sections */
+    section { padding: 2.25rem 0 0.5rem; }
+    section > h2 {
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 0.4rem;
+      margin: 0 0 1.15rem;
+    }
+    .section-note { color: var(--muted); font-size: 0.95rem; margin: -0.5rem 0 1.1rem; }
+
+    /* Experience timeline */
+    .job {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 0.85rem;
+    }
+    .job h3 { margin: 0; font-size: 1.02rem; }
+    .job .dates { color: var(--muted); font-weight: 400; font-size: 0.88rem; white-space: nowrap; }
+    .job .head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; flex-wrap: wrap; }
+    .job p { margin: 0.4rem 0 0; color: var(--muted); font-size: 0.95rem; }
+
+    /* Cards grid (projects & GPTs) */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 0.9rem;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.15rem 1.25rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s ease;
+    }
+    a.card:hover { border-color: var(--accent); }
+    .card h3 { margin: 0 0 0.3rem; font-size: 1.05rem; color: var(--accent); letter-spacing: -0.01em; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.93rem; flex: 1; }
+    .card .tag {
+      display: inline-block;
+      align-self: flex-start;
+      margin-top: 0.75rem;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 0.15rem 0.7rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    /* Skills chips */
+    .chips { display: flex; flex-wrap: wrap; gap: 0.45rem; padding: 0; margin: 0; list-style: none; }
+    .chips li {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.25rem 0.85rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .chips li.hot { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+
+    /* Speaking list */
+    ul.speaking { margin: 0; padding-left: 1.2rem; }
+    ul.speaking li { margin-bottom: 0.5rem; color: var(--muted); }
+    ul.speaking li strong { color: var(--ink); }
+
+    footer {
+      margin-top: 3rem;
+      border-top: 1px solid var(--line);
+      padding: 1.5rem 0 2.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer .links { display: flex; gap: 1.1rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+  </style>
 </head>
 <body>
-  <div id="contain" class="contain">
+  <div class="wrap">
+    <nav class="site">
+      <a class="brand" href="/">davidrynn.com</a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/coding/" aria-current="page">Coding</a></li>
+        <li><a href="/acting/">Other Stuff</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
 
-    <div class="web_development intro">
-      <div class="container">
-        <div class="bgImageContainer">
-          <div class="row BAGTallRow" style="padding-top:70px;padding-bottom:50px">
-            <div class="large-12 columns centeredText">
-              <h2 class="whiteText workFont">Mobile App Development</h2>
-            </div>
-          </div>
-        </div>
+    <header class="hero">
+      <h1>David Rynn</h1>
+      <p class="role">Senior iOS Engineer &middot; AI&#8209;Forward Mobile Development</p>
+      <p class="blurb">Nine years shipping native iOS apps used by millions across fintech, healthcare, and media — from Chase payment flows serving 80M+ customers to an indie App&nbsp;Store launch built with Apple Intelligence. I lead teams in adopting AI-assisted development: MCP, agentic workflows, and the tooling that makes engineers faster.</p>
+      <p>
+        <a class="btn" href="/resumes/">View Resume</a>
+        <a class="btn secondary" href="https://github.com/davidrynn" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn secondary" href="https://linkedin.com/in/david-rynn" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+      <ul class="stats">
+        <li><strong>9+ years</strong><span>shipping native iOS</span></li>
+        <li><strong>80M+ customers</strong><span>served by payment flows I own at Chase</span></li>
+        <li><strong>App Store founder</strong><span>concept → launch, solo, with on-device AI</span></li>
+        <li><strong>Global AI lead</strong><span>led Chase's AI Ambassador Mobile Chapter</span></li>
+      </ul>
+    </header>
 
-        <div class="row BAGLightRow BAGTallRow" id="bottomOfPage">
-          <div class="small-6 large-3 columns centeredText" id="bottomOfPage">
-            <img src="/img/Screenshot1.jpg" class="mockUpPhoto">
-          </div>
-          <div class="small-6 large-3 columns centeredText" id="bottomOfPage">
-            <img src="/img/Screenshot2.jpg" class="mockUpPhoto">
-          </div>
-          <div class="large-6 columns">
-            <h1 class="lemonMilkFont smallLineHeight">Simple Music Player</h1>
-            <h5 class="lemonMilkFont">Listen to your music, simply and easily</h5>
-            <p class="workFont">A simple music player for your music.  Intuitive and easy design without the clutter or sales pitch of other music players.  If you want to stream music use their player.  If you just want to listen to your music then use the Simple Music Player.</p>
-            <ul>
-              <li>Uses two different APIs to play local content and DRM content quick!</li>
-              <li>Fast and smooth functionality with as few taps as possible</li>
-              <li>Full search functions that works better than the other guys'</li>
-              <li>Shuffle and loop functions with buttons directly in the view</li>
-              <li>Easy navigation between song, album and artist</li>
-            </ul>
-            <a href="https://itunes.apple.com/us/app/simple-music-player/id1044856386?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:165px;height:40px;"></a>
-          </div>
-        </div>
-
-        <div class="row BAGDarkRow BAGTallRow">
-          <div class="small-6 large-3 columns centeredText" id="bottomOfPage">
-            <img src="/img/bubbleScreenshot1.jpg" class="mockUpPhoto">
-          </div>
-          <div class="small-6 large-3 columns centeredText" id="bottomOfPage">
-            <img src="/img/bubbleScreenshot2.jpg" class="mockUpPhoto">
-          </div>
-          <div class="large-6 columns" id="bottomOfPage">
-            <h1 class="lemonMilkFont smallLineHeight">Attack of the Bubbles!</h1>
-            <h5 class="lemonMilkFont">Bubble Popping Game</h5>
-            <p class="workFont">Pop the bubbles before they stack up and reach the top of the screen.  Simple and addictive.  Good luck!
-            <ul>
-              <li>Uses SpriteKit</li>
-              <li>Inhouse sound design and particle effects</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row BAGLightRow BAGTallRow">
-          <div class="small-6 large-3 columns centeredText" id="bottomOfPage">
-            <img src="/img/transitScreenshot1.jpg" class="mockUpPhoto">
-          </div>
-          <div class="small-6 large-3 columns centeredText" id="bottomOfPage">
-            <img src="/img/transitScreenshot2.jpg" class="mockUpPhoto">
-          </div>
-          <div class="large-6 columns" id="bottomOfPage">
-            <h1 class="lemonMilkFont smallLineHeight">InTransit</h1>
-            <h5 class="lemonMilkFont">MTA Transit tracker and delay notifications</h5>
-            <p class="workFont">Get crowdsourced reports of MTA delays and user generated delay reports"
-            <ul>
-              <li>Uses Geofences to track users for delays</li>
-              <li>CoreData to store MTA Api information offline</li>
-              <li>Parse APIs to store user trip data and send notifications</li>
-              <li>More reliable reports of delays so you don't have to rely on the MTA</li>
-              <li>Users don't even have to open the app!  They will be notified when they approach the station</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="bgImageContainer">
-          <div class="row BAGTallRow" style="padding-top:125px;padding-bottom:50px">
-            <div class="large-12 columns centeredText">
-              <h2 class="whiteText workFont">Web Development Projects</h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="row webDev">
-          <div class="col-md-6">
-            <a href="http://www.scottanddave.net" target="_blank"><img src="/img/scottanddave.png" class="img-responsive" alt="Wordatic game"></a>
-          </div>
-          <div class="col-md-6">Website for ScottandDave.net, a comedy webseries
-          </div>
-        </div>
-
-        <div class="row webDev">
-          <div class="col-md-6">
-            <a href="http://www.wordatic.com" target="_blank"><img src="/img/wordatic.gif" class="img-responsive" alt="Wordatic game"></a>
-          </div>
-          <div class="col-md-6">WORDATIC: One page app launched from Heroku.  Social word-game/story-builder.
-          </div>
-        </div>
-
-        <div class="row webDev">
-          <div class="col-md-6">
-            <a href="#"><img src="/img/semRater.gif" class="img-responsive" alt="Seminar Rater RoR"></a>
-          </div>
-          <div class="col-md-6"><p class="text-center">SEMINAR RATER: Ruby on Rails 4.x online database app utility for actors (in development)</p>
-          </div>
-        </div>
-
-        <div id="canvasDiv" class="row">
-          <div class="col-md-6">
-            <p></p>
-          </div>
-        </div>
-
-        <div class="bs-example" data-example-id="simple-table">
-          <table class="table table-condensed">
-            <caption><h3>Skills</h3></caption>
-            <thead>
-              <tr>
-                <th>Languages</th>
-                <th>Frameworks/Libraries</th>
-                <th>Version Control/Deployment</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Objective C</td>
-                <td>jQuery</td>
-                <td>Git</td>
-              </tr>
-              <tr>
-                <td>Swift</td>
-                <td>SpriteKit</td>
-                <td>AWS</td>
-              </tr>
-              <tr>
-                <td>Javascript</td>
-                <td>MPMedia/AVAudio</td>
-                <td>Heroku</td>
-              </tr>
-              <tr>
-                <td>Java</td>
-                <td>Bootstrap</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>HTML</td>
-              </tr>
-              <tr>
-                <td>CSS</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>PHP</td>
-                <td></td>
-                <td></td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div><!-- /example -->
-      </div><!-- /container -->
-    </div><!-- /intro -->
-
-    <div class="menu-wrap">
-      <nav class="menu">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/coding/">Coding</a></li>
-          <li><a href="/acting/">Other Stuff</a></li>
-          <li><a href="/contact/">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="footer web_development">
-      <div class="wrapper">
-        <ul>
-          <li><a href="https://twitter.com/davidrynn" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-          <li><a href="https://www.facebook.com/david.rynn.3" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-          <li><a href="https://www.linkedin.com/pub/david-rynn/2/54b/6b9" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-          <li><a href="https://www.github.com/davidrynn" target="_blank"><i class="fa fa-github-square"></i></a></li>
-        </ul>
-        <p>&copy;2024 David Rynn</p>
+    <section id="experience">
+      <h2>Where I've Worked</h2>
+      <div class="job">
+        <div class="head"><h3>Fieldlight Interactive — Independent iOS Product Engineer</h3><span class="dates">2026 – Present</span></div>
+        <p>Built and launched <a href="https://apps.apple.com/us/app/clear-next-step-get-unstuck/id6761282095" target="_blank" rel="noopener">Clear Next Step</a> on the App Store — product, design, architecture, and code — using Swift, SwiftUI, and Apple Intelligence / Foundation Models.</p>
       </div>
-    </div>
-  </div><!-- /contain -->
+      <div class="job">
+        <div class="head"><h3>Chase — Senior iOS Engineer</h3><span class="dates">Nov 2023 – Present</span></div>
+        <p>Own user-facing payment flows for 80M+ customers; refactored networking for a 12% app-wide stability gain. Led the global AI Ambassador Mobile Chapter — the first mobile-focused AI leadership role at Chase — driving MCP, agent frameworks, and AI coding tools across distributed teams.</p>
+      </div>
+      <div class="job">
+        <div class="head"><h3>Maven Clinic — Senior iOS Engineer</h3><span class="dates">Jul 2022 – Oct 2023</span></div>
+        <p>Shipped a native SwiftUI debit card feature integrated with Stripe, concept through App Store release; built subscription and payment workflows.</p>
+      </div>
+      <div class="job">
+        <div class="head"><h3>Capital One — iOS Engineer</h3><span class="dates">Jun 2021 – Jun 2022</span></div>
+        <p>Built activation and onboarding features with RxSwift, Combine, and Redux; migrated legacy Objective-C to Swift, cutting crash rates.</p>
+      </div>
+      <div class="job">
+        <div class="head"><h3>Prolific Interactive / WeWork &amp; Small Planet — iOS Engineer</h3><span class="dates">2019 – 2021</span></div>
+        <p>Agency and consulting work: client apps in fintech, retail, and media; onboarding features with GraphQL and RIBS at WeWork; owned internal CocoaPods and coding standards.</p>
+      </div>
+      <div class="job">
+        <div class="head"><h3>NYC Dept. of Information Tech &amp; Telecom — Mobile Developer</h3><span class="dates">2016 – 2018</span></div>
+        <p>Lead developer for Notify NYC, the city's emergency notification app with 25K+ active users.</p>
+      </div>
+      <p class="section-note">Before code: public defender with 30+ jury trials. <a href="/resumes/">Full resume →</a></p>
+    </section>
 
-  <script src="/js/classie.js"></script>
-  <script>
-    (function() {
-      var container = document.getElementById('contain'),
-          trigger = container.querySelector('button.trigger');
+    <section id="projects">
+      <h2>Side Projects</h2>
+      <div class="cards">
+        <a class="card" href="https://apps.apple.com/us/app/clear-next-step-get-unstuck/id6761282095" target="_blank" rel="noopener">
+          <h3>Clear Next Step: Get Unstuck</h3>
+          <p>Turn an unstructured brain dump into one small, doable next step. Private and fully on-device, built with SwiftUI and Apple Intelligence / Foundation Models.</p>
+          <span class="tag">App Store</span>
+        </a>
+        <a class="card" href="https://github.com/davidrynn/FoundationTalkGenerator" target="_blank" rel="noopener">
+          <h3>FoundationTalkGenerator</h3>
+          <p>Generates lightning talks from a prompt using Apple's FoundationModels — the live demo from my iOSoho talk on practical on-device AI.</p>
+          <span class="tag">Swift · On-device AI</span>
+        </a>
+        <a class="card" href="https://github.com/davidrynn/16bitProcGen" target="_blank" rel="noopener">
+          <h3>16bitProcGen</h3>
+          <p>Procedural terrain generation experiments in Unity — exploring noise, meshing, and retro-styled world building in C#.</p>
+          <span class="tag">Unity · C#</span>
+        </a>
+        <a class="card" href="https://github.com/davidrynn/AlgoChamp" target="_blank" rel="noopener">
+          <h3>AlgoChamp</h3>
+          <p>A data-structures-and-algorithms study app for keeping interview skills sharp — spaced practice over the classic problem set.</p>
+          <span class="tag">Study Tool</span>
+        </a>
+      </div>
+      <p class="section-note" style="margin-top:1.1rem">More experiments — wave function collapse, SwiftUI Charts, concurrency demos — on <a href="https://github.com/davidrynn" target="_blank" rel="noopener">GitHub</a>.</p>
+    </section>
 
-      function toggleContent() {
-        if (classie.has(container, 'contain--open')) {
-          classie.remove(container, 'contain--open');
-          classie.remove(trigger, 'trigger--active');
-          window.addEventListener('scroll', noscroll);
-        } else {
-          classie.add(container, 'contain--open');
-          classie.add(trigger, 'trigger--active');
-          window.removeEventListener('scroll', noscroll);
-        }
-      }
+    <section id="gpts">
+      <h2>Custom GPTs</h2>
+      <p class="section-note">Purpose-built assistants I've published on ChatGPT.</p>
+      <div class="cards">
+        <a class="card" href="https://chatgpt.com/g/g-69c70cfdb3d48191a63d67edb52b3cee-clear-next-step" target="_blank" rel="noopener">
+          <h3>Clear Next Step</h3>
+          <p>Reduces decision paralysis by turning whatever's on your mind into one small, actionable next step — the concept that became the Clear Next Step iOS app.</p>
+          <span class="tag">ChatGPT</span>
+        </a>
+        <a class="card" href="https://chatgpt.com/g/g-6a16f5409d3c8191b12742786c92aa20-idea-iterator" target="_blank" rel="noopener">
+          <h3>Idea Iterator</h3>
+          <p>A brainstorming partner that pressure-tests and refines rough ideas through rapid iteration — helping you get out of the mud and sharpen a concept into something buildable.</p>
+          <span class="tag">ChatGPT</span>
+        </a>
+      </div>
+    </section>
 
-      function noscroll() {
-        window.scrollTo(0, 0);
-      }
+    <section id="speaking">
+      <h2>Speaking &amp; Community</h2>
+      <ul class="speaking">
+        <li><strong>iOSoho NYC (2025)</strong> — Apple FoundationModels &amp; Apple Intelligence: practical on-device AI patterns, with a live talk-generator demo.</li>
+        <li><strong>Chase iOS Engineering</strong> — internal talks on Swift Concurrency adoption, async/await migration, and iOS performance profiling with Instruments.</li>
+        <li><strong>AI Ambassador, Chase</strong> — ran AI hackathons; piloted MCP, Claude Code, OpenHands, Copilot, Windsurf, and Cursor across the mobile org.</li>
+        <li><strong>iOSoho NYC (2021)</strong> — lightning talks on SwiftUI Charts and Regex in Swift.</li>
+      </ul>
+    </section>
 
-      document.body.scrollTop = document.documentElement.scrollTop = 0;
-      window.addEventListener('scroll', noscroll);
+    <section id="skills">
+      <h2>Toolbox</h2>
+      <ul class="chips">
+        <li class="hot">Swift</li>
+        <li class="hot">SwiftUI</li>
+        <li class="hot">Apple Intelligence / FoundationModels</li>
+        <li class="hot">Model Context Protocol (MCP)</li>
+        <li>Structured Concurrency</li>
+        <li>Combine</li>
+        <li>GraphQL / Apollo</li>
+        <li>Stripe</li>
+        <li>MVVM-C</li>
+        <li>XCTest</li>
+        <li>Xcode Instruments</li>
+        <li>RxSwift</li>
+        <li>Objective-C</li>
+        <li>Bitrise CI/CD</li>
+        <li>Claude Code</li>
+        <li>GitHub Copilot</li>
+        <li>Cursor</li>
+        <li>AWS Certified Cloud Practitioner</li>
+      </ul>
+    </section>
 
-      if (trigger) {
-        trigger.addEventListener('click', toggleContent);
-      }
-    })();
-  </script>
+    <footer>
+      <div class="links">
+        <a href="https://github.com/davidrynn" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/david-rynn" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:davidrynn@gmail.com">Email</a>
+        <a href="/resumes/">Resume</a>
+      </div>
+      <p>&copy; 2026 David Rynn</p>
+    </footer>
+  </div>
 </body>
 </html>
