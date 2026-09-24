@@ -3,7 +3,8 @@
 //   data-path="helios/art/concept"   repo folder to list
 //   data-kind="image" | "video"
 // Files sort by name, so a numeric or date prefix sets the order. The name becomes the caption:
-// "2026-07-12-Grass-at-last.jpg" reads "Grass at last · Jul 2026".
+// "2026-07-12-Grass-at-last.jpg" or "2026-07-12-1530-Grass-at-last.jpg" (time keeps same-day
+// shots in order, and is hidden) reads "Grass at last · Jul 2026".
 (function () {
   var REPO = 'davidrynn/davidrynn.github.io';
   var MATCH = {
@@ -14,7 +15,7 @@
 
   function caption(name) {
     var base = name.replace(/\.[^.]+$/, '');
-    var dated = base.match(/^(\d{4})-(\d{2})-\d{2}[-_ ]+(.*)$/);
+    var dated = base.match(/^(\d{4})-(\d{2})-\d{2}(?:[-_ ]\d{4,6})?[-_ ]+(.*)$/);
     if (dated) {
       return dated[3].replace(/[-_]+/g, ' ') + ' · ' + MONTHS[+dated[2] - 1] + ' ' + dated[1];
     }
