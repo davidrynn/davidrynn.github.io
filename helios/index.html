@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Helios — a game in development</title>
+  <meta name="description" content="Helios (code name) — a survival-crafting game on a strange procedural world, in development by David Rynn. Art and video from the build.">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --surface: #ffffff;
+      --ink: #1f2430;
+      --muted: #5b6472;
+      --line: #e2ddd2;
+      --accent: #b8581d;
+      --accent-soft: #f6e6d8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14151a;
+        --surface: #1d1f25;
+        --ink: #ecebe8;
+        --muted: #a3a09a;
+        --line: #2d3037;
+        --accent: #f0a35e;
+        --accent-soft: #33271d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 0 1rem; }
+
+    /* Nav — same as /coding */
+    nav.site {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding: 1.1rem 0;
+    }
+    nav.site .brand { font-weight: 700; text-decoration: none; color: var(--ink); }
+    nav.site ul { display: flex; gap: 1.15rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+    nav.site ul a { text-decoration: none; color: var(--muted); font-size: 0.95rem; }
+    nav.site ul a:hover, nav.site ul a[aria-current] { color: var(--accent); }
+
+    /* Hero */
+    header.hero { padding: 3rem 0 2rem; }
+    .kicker {
+      margin: 0 0 0.5rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    header.hero h1 {
+      margin: 0;
+      font-family: "Silkscreen", monospace;
+      font-weight: 400;
+      font-size: clamp(2.6rem, 9vw, 4.5rem);
+      line-height: 1;
+      color: var(--accent);
+    }
+    header.hero p.pitch { margin: 1.25rem 0 0; max-width: 44rem; font-size: 1.1rem; }
+    header.hero p.note { margin: 0.75rem 0 0; max-width: 44rem; color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; margin: 1.25rem 0 0; }
+    .tags li {
+      background: var(--accent-soft);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 0.2rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    section { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    section h2 {
+      margin: 0 0 1rem;
+      font-family: "Silkscreen", monospace;
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .grid.videos { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+    figure {
+      margin: 0;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    figure button {
+      display: block;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      background: #0000;
+      cursor: zoom-in;
+    }
+    figure img, figure video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #000;
+    }
+    figure video { aspect-ratio: 16 / 9; object-fit: contain; }
+    figcaption { padding: 0.5rem 0.75rem; font-size: 0.9rem; color: var(--muted); }
+    .empty { color: var(--muted); font-style: italic; }
+
+    dialog {
+      max-width: min(96vw, 1400px);
+      max-height: 94vh;
+      padding: 0;
+      border: 0;
+      border-radius: 10px;
+      background: #000;
+    }
+    dialog::backdrop { background: rgba(0, 0, 0, 0.85); }
+    dialog img { display: block; max-width: 100%; max-height: 94vh; object-fit: contain; cursor: zoom-out; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.5rem 0 2.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer .links { display: flex; gap: 1.15rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="site">
+      <a class="brand" href="/">davidrynn.com</a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/coding/">Coding</a></li>
+        <li><a href="/helios/" aria-current="page">Helios</a></li>
+        <li><a href="/acting/">Other Stuff</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <p class="kicker">Code name &middot; in development</p>
+      <h1>Helios</h1>
+      <p class="pitch">
+        A survival-crafting game on a strange procedural world where exploring is fun in itself:
+        getting around is exhilarating, hunting for resources is part of the fun, and there are
+        mysteries to discover and strange beasts to meet. You gather, survive and build &mdash; change
+        one piece of a building and the whole structure re-forms.
+      </p>
+      <p class="note">
+        Built solo in Unity 6 with ECS/DOTS: an editable signed-distance-field terrain meshed with
+        Surface Nets, GPU compute, and procedural placement. Everything here is work in progress.
+      </p>
+      <ul class="tags">
+        <li>Unity 6</li>
+        <li>ECS / DOTS</li>
+        <li>Procedural terrain</li>
+        <li>Survival-crafting</li>
+      </ul>
+    </header>
+
+    <section id="videos">
+      <h2>Videos</h2>
+      <div class="grid videos" data-folder="videos"><p class="empty">Loading&hellip;</p></div>
+    </section>
+
+    <section id="art">
+      <h2>Art</h2>
+      <div class="grid" data-folder="art"><p class="empty">Loading&hellip;</p></div>
+    </section>
+
+    <footer>
+      <div class="links">
+        <a href="https://github.com/davidrynn" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/david-rynn" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:davidrynn@gmail.com">Email</a>
+      </div>
+      <p>&copy; 2026 David Rynn &middot; Helios art and footage, all rights reserved.</p>
+    </footer>
+  </div>
+
+  <dialog id="lightbox"><img alt=""></dialog>
+
+  <script>
+    // The Art and Videos sections list whatever is committed in helios/art/ and helios/videos/,
+    // read through the GitHub contents API — add a file, push, and it appears. No manifest to edit.
+    (function () {
+      var REPO = 'davidrynn/davidrynn.github.io';
+      var IMAGE = /\.(png|jpe?g|gif|webp|avif)$/i;
+      var VIDEO = /\.(mp4|webm|mov)$/i;
+
+      function caption(name) {
+        return name.replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' ');
+      }
+
+      var lightbox = document.getElementById('lightbox');
+      var lightboxImg = lightbox.querySelector('img');
+      lightbox.addEventListener('click', function () { lightbox.close(); });
+
+      function imageTile(file) {
+        var fig = document.createElement('figure');
+        var btn = document.createElement('button');
+        var img = document.createElement('img');
+        img.src = 'art/' + encodeURIComponent(file.name);
+        img.alt = caption(file.name);
+        img.loading = 'lazy';
+        btn.appendChild(img);
+        btn.addEventListener('click', function () {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightbox.showModal();
+        });
+        fig.appendChild(btn);
+        return fig;
+      }
+
+      function videoTile(file) {
+        var fig = document.createElement('figure');
+        var video = document.createElement('video');
+        video.src = 'videos/' + encodeURIComponent(file.name);
+        video.controls = true;
+        video.preload = 'metadata';
+        video.playsInline = true;
+        fig.appendChild(video);
+        return fig;
+      }
+
+      document.querySelectorAll('[data-folder]').forEach(function (grid) {
+        var folder = grid.getAttribute('data-folder');
+        var match = folder === 'art' ? IMAGE : VIDEO;
+        var make = folder === 'art' ? imageTile : videoTile;
+
+        fetch('https://api.github.com/repos/' + REPO + '/contents/helios/' + folder)
+          .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+          .then(function (files) {
+            files = files
+              .filter(function (f) { return f.type === 'file' && match.test(f.name); })
+              .sort(function (a, b) { return a.name.localeCompare(b.name, undefined, { numeric: true }); });
+            grid.innerHTML = '';
+            if (!files.length) {
+              grid.innerHTML = '<p class="empty">Coming soon.</p>';
+              return;
+            }
+            files.forEach(function (f) {
+              var fig = make(f);
+              var cap = document.createElement('figcaption');
+              cap.textContent = caption(f.name);
+              fig.appendChild(cap);
+              grid.appendChild(fig);
+            });
+          })
+          .catch(function () {
+            grid.innerHTML = '<p class="empty">Couldn’t load this section right now — try refreshing.</p>';
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
